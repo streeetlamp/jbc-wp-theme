@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c87c5fd1e66cb87db32fb74fa5f2669d",
+    "content-hash": "2345d8d25d2c7e083abffc398bab9331",
     "packages": [],
     "packages-dev": [
         {
@@ -691,20 +691,20 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v5.2.0",
+            "version": "v3.4.47",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "fd8305521692f27eae3263895d1ef1571c71a78d"
+                "reference": "b6b6ad3db3edb1b4b1c1896b1975fb684994de6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/fd8305521692f27eae3263895d1ef1571c71a78d",
-                "reference": "fd8305521692f27eae3263895d1ef1571c71a78d",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/b6b6ad3db3edb1b4b1c1896b1975fb684994de6e",
+                "reference": "b6b6ad3db3edb1b4b1c1896b1975fb684994de6e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2.5"
+                "php": "^5.5.9|>=7.0.8"
             },
             "type": "library",
             "autoload": {
@@ -732,7 +732,7 @@
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v5.2.0"
+                "source": "https://github.com/symfony/finder/tree/v3.4.47"
             },
             "funding": [
                 {
@@ -748,7 +748,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-18T09:42:36+00:00"
+            "time": "2020-11-16T17:02:08+00:00"
         },
         {
             "name": "wp-cli/i18n-command",
@@ -1118,5 +1118,8 @@
         "php": ">=5.6"
     },
     "platform-dev": [],
+    "platform-overrides": {
+        "php": "5.6.1"
+    },
     "plugin-api-version": "2.0.0"
 }
