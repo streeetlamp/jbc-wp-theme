@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*!
 Theme Name: James Branch Cabell
 Theme URI: http://underscores.me/
@@ -6,7 +8,7 @@ Author URI: https://www.library.vcu.edu/
 Description: The JBC website will create a hub for information and publishing related to James Branch Cabell, stimulating new interest and scholarship while presenting the author’s works, biography, philosophical concerns, and legacy to specialists and the general reading public. The project seeks to convey a sense of Cabell’s playful wit as an enticement for new audiences to explore these resources. In addition, the project will highlight Cabell as an influence and inspiration at Virginia Commonwealth University.
 Version: 1.0.0
 Tested up to: 5.4
-Requires PHP: 7.0
+Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: jbc
@@ -49,6 +51,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento+Sans&family=Quattrocento:wght@400;700&display=swap);
 
 /*--------------------------------------------------------------
 # Generic
@@ -402,9 +405,9 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-size: 1rem;
+	color: #2b2e23;
+	font-family: Quattrocento, serif;
+	font-size: 18px;
 	line-height: 1.5;
 }
 
@@ -415,6 +418,8 @@ h4,
 h5,
 h6 {
 	clear: both;
+	font-family: Oswald, sans-serif;
+	text-transform: uppercase;
 }
 
 p {
@@ -472,7 +477,7 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-	background: #fff;
+	background: #f2f4f3;
 }
 
 hr {
@@ -533,17 +538,17 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+	color: #a20021;
 }
 
 a:visited {
-	color: #800080;
+	color: #a20021;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #191970;
+	color: #2274a5;
 }
 
 a:focus {
@@ -694,7 +699,9 @@ textarea {
 
 .main-navigation a {
 	display: block;
+	font-family: Oswald, sans-serif;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 
 /* Small menu. */
@@ -914,12 +921,12 @@ textarea {
 }
 
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
+	background-color: #f8f4e3;
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
 	clip-path: none;
-	color: #21759b;
+	color: #2274a5;
 	display: block;
 	font-size: 0.875rem;
 	font-weight: 700;
