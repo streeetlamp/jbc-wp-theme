@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
@@ -11,27 +12,45 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function jbc_body_classes( $classes ) {
+function jbc_body_classes($classes)
+{
 	// Adds a class of hfeed to non-singular pages.
-	if ( ! is_singular() ) {
+	if (!is_singular()) {
 		$classes[] = 'hfeed';
 	}
 
 	// Adds a class of no-sidebar when there is no sidebar present.
-	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+	if (!is_active_sidebar('sidebar-1')) {
 		$classes[] = 'no-sidebar';
 	}
 
 	return $classes;
 }
-add_filter( 'body_class', 'jbc_body_classes' );
+add_filter('body_class', 'jbc_body_classes');
 
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
  */
-function jbc_pingback_header() {
-	if ( is_singular() && pings_open() ) {
-		printf( '<link rel="pingback" href="%s">', esc_url( get_bloginfo( 'pingback_url' ) ) );
+function jbc_pingback_header()
+{
+	if (is_singular() && pings_open()) {
+		printf('<link rel="pingback" href="%s">', esc_url(get_bloginfo('pingback_url')));
 	}
 }
-add_action( 'wp_head', 'jbc_pingback_header' );
+add_action('wp_head', 'jbc_pingback_header');
+
+if (!function_exists('the_field')) {
+	add_action('admin_notices', 'jbc_acf_notice');
+}
+
+/**
+ * ACF jbc Notice.
+ */
+function jbc_acf_notice()
+{
+?>
+	<div class="update-nag notice" style="display:block; margin:20px 0;">
+		<h3><?php echo  'Install Advanced Custom Fields Pro please or nothing will work probably!'; ?></h3>
+	</div>
+<?php
+}
