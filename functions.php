@@ -52,6 +52,7 @@ if ( ! function_exists( 'jbc_setup' ) ) :
 			array(
 				'menu-1' => esc_html__( 'Primary', 'jbc' ),
 				'Alt Nav' => esc_html( 'Alternative', 'jbc' ),
+				'footer' => esc_html( 'Footer', 'jbc' ),
 			)
 		);
 
