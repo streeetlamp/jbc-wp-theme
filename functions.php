@@ -1,4 +1,5 @@
 <?php
+
 /**
  * James Branch Cabell functions and definitions
  *
@@ -7,12 +8,12 @@
  * @package James_Branch_Cabell
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
+if (!defined('_S_VERSION')) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.2' );
+	define('_S_VERSION', '1.0.2');
 }
 
-if ( ! function_exists( 'jbc_setup' ) ) :
+if (!function_exists('jbc_setup')) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -20,17 +21,18 @@ if ( ! function_exists( 'jbc_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function jbc_setup() {
+	function jbc_setup()
+	{
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on James Branch Cabell, use a find and replace
 		 * to change 'jbc' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'jbc', get_template_directory() . '/languages' );
+		load_theme_textdomain('jbc', get_template_directory() . '/languages');
 
 		// Add default posts and comments RSS feed links to head.
-		add_theme_support( 'automatic-feed-links' );
+		add_theme_support('automatic-feed-links');
 
 		/*
 		 * Let WordPress manage the document title.
@@ -38,23 +40,38 @@ if ( ! function_exists( 'jbc_setup' ) ) :
 		 * hard-coded <title> tag in the document head, and expect WordPress to
 		 * provide it for us.
 		 */
-		add_theme_support( 'title-tag' );
+		add_theme_support('title-tag');
 
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
-		add_theme_support( 'post-thumbnails' );
+		add_theme_support('post-thumbnails');
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'jbc' ),
-				'Alt Nav' => esc_html( 'Alternative', 'jbc' ),
-				'footer' => esc_html( 'Footer', 'jbc' ),
+				'menu-1' => esc_html__('Primary', 'jbc'),
+				'Alt Nav' => esc_html('Alternative', 'jbc'),
+				'footer' => esc_html('Footer', 'jbc'),
 			)
 		);
+
+		/*
+* ACF options page
+*/
+		if (function_exists('acf_add_options_page')) {
+			acf_add_options_page(
+				array(
+					'page_title' => 'Site Options',
+					'menu_title' => 'Site Options',
+					'menu_slug' => 'options',
+					'capability' => 'edit_posts',
+					'redirect' => false,
+				)
+			);
+		}
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -104,7 +121,7 @@ if ( ! function_exists( 'jbc_setup' ) ) :
 		);
 	}
 endif;
-add_action( 'after_setup_theme', 'jbc_setup' );
+add_action('after_setup_theme', 'jbc_setup');
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -113,10 +130,11 @@ add_action( 'after_setup_theme', 'jbc_setup' );
  *
  * @global int $content_width
  */
-function jbc_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'jbc_content_width', 640 );
+function jbc_content_width()
+{
+	$GLOBALS['content_width'] = apply_filters('jbc_content_width', 640);
 }
-add_action( 'after_setup_theme', 'jbc_content_width', 0 );
+add_action('after_setup_theme', 'jbc_content_width', 0);
 
 /**
  * Register widget area.
@@ -141,17 +159,18 @@ add_action( 'after_setup_theme', 'jbc_content_width', 0 );
 /**
  * Enqueue scripts and styles.
  */
-function jbc_scripts() {
-	wp_enqueue_style( 'jbc-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'jbc-style', 'rtl', 'replace' );
+function jbc_scripts()
+{
+	wp_enqueue_style('jbc-style', get_stylesheet_uri(), array(), _S_VERSION);
+	wp_style_add_data('jbc-style', 'rtl', 'replace');
 
-	wp_enqueue_script( 'jbc-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script('jbc-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
+	if (is_singular() && comments_open() && get_option('thread_comments')) {
+		wp_enqueue_script('comment-reply');
 	}
 }
-add_action( 'wp_enqueue_scripts', 'jbc_scripts' );
+add_action('wp_enqueue_scripts', 'jbc_scripts');
 
 /**
  * Implement the Custom Header feature.
@@ -176,7 +195,6 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Load Jetpack compatibility file.
  */
-if ( defined( 'JETPACK__VERSION' ) ) {
+if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
