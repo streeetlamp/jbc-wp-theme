@@ -26,6 +26,20 @@ get_header();
 			get_template_part('inc/flex-content-loop');
 		endwhile;
 	endif;
+
+	if (is_front_page()) : ?>
+		<nav id="alt-nav" class="alternative-navigation">
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'alt-nav',
+					'menu_id'        => 'Alternative',
+				)
+			);
+			?>
+		</nav><!-- #alt-navigation -->
+	<?php
+	endif;
 	?>
 
 

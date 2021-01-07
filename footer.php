@@ -13,9 +13,8 @@
 ?>
 
 <footer id="colophon" class="site-footer">
-	<div class="site-info">
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="footer" aria-expanded="false"><?php esc_html_e('Footer Menu', 'jbc'); ?></button>
+	<div class="info-footer">
+		<nav id="footer-nav" class="footer-navigation">
 			<?php
 			wp_nav_menu(
 				array(
