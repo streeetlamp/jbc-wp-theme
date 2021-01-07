@@ -54,6 +54,8 @@
 					'menu_id'        => 'primary-menu',
 				)
 			);
+
+			get_search_form();
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
