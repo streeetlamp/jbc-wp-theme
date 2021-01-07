@@ -461,7 +461,7 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-	background: #f2f4f3;
+	background: #EBEBEB;
 }
 
 hr {
@@ -892,7 +892,7 @@ textarea {
 --------------------------------------------- */
 .site-footer {
 	background-color: #2b2e23;
-	color: #f2f4f3;
+	color: #EBEBEB;
 }
 
 .site-footer a {
