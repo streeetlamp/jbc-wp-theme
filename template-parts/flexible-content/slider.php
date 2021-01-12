@@ -25,7 +25,7 @@
     ?>
 
       <div class="slide" style="background-image:url('<?php echo $image['sizes']['large']; ?>');">
-        <?php if ($excerpt || $headline || $link) : ?>
+        <?php if ($image) : ?>
           <div class="slide-excerpt-wrap">
             <div class="slide-inner">
               <h2 class="slide-headline"><?php echo $headline; ?></h2>

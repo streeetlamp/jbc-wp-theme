@@ -844,6 +844,24 @@ textarea {
 	display: inline-block;
 }
 
+.slide {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 43.75%;
+	background-size: cover;
+	background-position: center center;
+	margin: 20px 0;
+}
+
+.slide-inner {
+	color: white;
+	position: absolute;
+	top: 10%;
+	right: 30%;
+}
+
 /* Captions
 --------------------------------------------- */
 .wp-caption {
