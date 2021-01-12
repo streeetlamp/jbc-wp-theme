@@ -859,7 +859,8 @@ textarea {
 	color: white;
 	position: absolute;
 	top: 10%;
-	right: 30%;
+	left: 65%;
+	padding-right: 40px;
 }
 
 /* Captions
