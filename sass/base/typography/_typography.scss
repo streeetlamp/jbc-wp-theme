@@ -4,10 +4,31 @@ input,
 select,
 optgroup,
 textarea {
-	color: $color__text-main;
-	font-family: $font__main;
-	font-size: $font__size-base;
-	line-height: $font__line-height-body;
+  color: $color__text-main;
+  font-family: $font__main;
+  font-size: $font__size-base;
+  line-height: $font__line-height-body;
+}
+
+.site-branding {
+  display: grid;
+  grid-template-columns: 35% auto;
+  max-width: 1200px;
+  margin: 0 0 0 0;
+}
+
+.site-description {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.site-title {
+  font-family: $font__title;
+	margin: 0;
+  a {
+    text-decoration: none;
+  }
 }
 
 @import "headings";
