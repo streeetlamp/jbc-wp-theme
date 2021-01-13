@@ -42,7 +42,9 @@
 			if ( $jbc_description || is_customize_preview() ) :
 				?>
 				<p class="site-description"><?php echo $jbc_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+			<?php endif;
+						get_search_form();
+			?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
@@ -53,9 +55,6 @@
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
 				)
-			);
-
-			get_search_form();
-			?>
+			);?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
