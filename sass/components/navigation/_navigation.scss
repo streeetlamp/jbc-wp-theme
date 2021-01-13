@@ -1,8 +1,13 @@
+.main-navigation {
+  margin: .5em 0 0 0;
+}
+
 .main-navigation,
 .footer-navigation,
 .alternative-navigation {
-  display: block;
+  display: grid;
   width: 100%;
+  gap: 20px;
 
   ul {
     display: none;
@@ -75,7 +80,7 @@
 }
 
 .menu-footer-container {
-	padding: 2em 1em 0 1em;
+  padding: 2em 1em 0 1em;
 }
 
 /* Small menu. */
@@ -94,6 +99,7 @@
   .footer-navigation ul,
   .alternative-navigation ul {
     display: flex;
+    gap: 1.25em;
   }
 }
 
