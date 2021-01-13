@@ -4,6 +4,18 @@
 
 .alternative-navigation {
   top: 700px;
+  gap: 0 !important;
+
+  ul {
+    gap: 0;
+
+    li {
+      a {
+        background-color: red;
+        padding: 15px 60px;
+      }
+    }
+  }
 }
 
 .menu-top-nav-container {
@@ -110,6 +122,30 @@
   .alternative-navigation ul {
     display: flex;
     gap: 1.25em;
+  }
+}
+
+.alternative-navigation ul {
+  gap: 0;
+  li {
+    a {
+      color: $color__norm-white;
+    }
+  }
+  li:first-of-type {
+    a {
+      background-color: $color__gray-dark;
+    }
+  }
+  li:nth-of-type(2) {
+    a {
+      background-color: $color__gray-med;
+    }
+  }
+  li:last-of-type {
+    a {
+      background-color: $color__gray-lite;
+    }
   }
 }
 

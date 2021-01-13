@@ -14,7 +14,10 @@
  */
 
 get_header();
-
+?>
+<main id="primary" class="site-main">
+	
+	<?php
 	if (is_front_page()) :
 		if (have_rows('flexible_content')) :
 			while (have_rows('flexible_content')) :
@@ -24,9 +27,6 @@ get_header();
 		endif;
 	endif;
 	?>
-
-
-<main id="primary" class="site-main">
 
 	<?php
 

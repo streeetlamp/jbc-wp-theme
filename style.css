@@ -51,7 +51,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 @import url(https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento+Sans&family=Quattrocento:wght@400;700&display=swap);
 body.home .site-main {
-	margin-top: 465px;
+	margin-top: 450px;
 }
 
 /*--------------------------------------------------------------
@@ -657,6 +657,16 @@ textarea {
 
 .alternative-navigation {
 	top: 700px;
+	gap: 0 !important;
+}
+
+.alternative-navigation ul {
+	gap: 0;
+}
+
+.alternative-navigation ul li a {
+	background-color: red;
+	padding: 15px 60px;
 }
 
 .menu-top-nav-container a {
@@ -763,6 +773,26 @@ textarea {
 		display: flex;
 		gap: 1.25em;
 	}
+}
+
+.alternative-navigation ul {
+	gap: 0;
+}
+
+.alternative-navigation ul li a {
+	color: #FFFFFF;
+}
+
+.alternative-navigation ul li:first-of-type a {
+	background-color: #282828;
+}
+
+.alternative-navigation ul li:nth-of-type(2) a {
+	background-color: #5A5A5A;
+}
+
+.alternative-navigation ul li:last-of-type a {
+	background-color: #858585;
 }
 
 .site-main .comment-navigation, .site-main
@@ -989,7 +1019,7 @@ body.home .slide-inner {
 	color: white;
 	display: grid;
 	position: relative;
-	top: 30%;
+	top: 25%;
 	left: 65%;
 	max-width: 300px;
 	z-index: 9;
