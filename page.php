@@ -14,18 +14,21 @@
  */
 
 get_header();
-?>
+
+	if (is_front_page()) :
+		if (have_rows('flexible_content')) :
+			while (have_rows('flexible_content')) :
+				the_row();
+				get_template_part('inc/flex-content-loop');
+			endwhile;
+		endif;
+	endif;
+	?>
+
 
 <main id="primary" class="site-main">
 
 	<?php
-	// check if the flexible content field has rows of data
-	if (have_rows('flexible_content')) :
-		while (have_rows('flexible_content')) :
-			the_row();
-			get_template_part('inc/flex-content-loop');
-		endwhile;
-	endif;
 
 	if (is_front_page()) : ?>
 		<nav id="alt-nav" class="alternative-navigation">
