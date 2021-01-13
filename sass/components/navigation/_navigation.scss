@@ -2,6 +2,16 @@
   margin: .5em 0 0 0;
 }
 
+.alternative-navigation {
+  top: 700px;
+}
+
+.menu-top-nav-container {
+  a {
+    color: $color__norm-white;
+  }
+}
+
 .main-navigation,
 .footer-navigation,
 .alternative-navigation {

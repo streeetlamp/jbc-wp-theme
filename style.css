@@ -50,6 +50,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 --------------------------------------------------------------*/
 @import url(https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento+Sans&family=Quattrocento:wght@400;700&display=swap);
+body.home .site-main {
+	margin-top: 465px;
+}
+
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -399,6 +403,7 @@ textarea {
 	margin: 0;
 	display: grid;
 	align-items: end;
+	color: #FFFFFF;
 }
 
 .site-title {
@@ -408,6 +413,7 @@ textarea {
 
 .site-title a {
 	text-decoration: none;
+	color: #FFFFFF !important;
 }
 
 h1,
@@ -647,6 +653,14 @@ textarea {
 --------------------------------------------- */
 .main-navigation {
 	margin: .5em 0 0 0;
+}
+
+.alternative-navigation {
+	top: 700px;
+}
+
+.menu-top-nav-container a {
+	color: #FFFFFF;
 }
 
 .main-navigation,
@@ -933,15 +947,20 @@ textarea {
 --------------------------------------------- */
 .site-branding {
 	display: grid;
-	grid-template-columns: 30% auto;
+	grid-template-columns: 30% auto 30%;
 	max-width: 1200px;
 	margin: 0 0 0 0;
+}
+
+.site-branding .search-form {
+	align-self: center;
+	justify-self: end;
 }
 
 /* Slider
 --------------------------------------------- */
 body.home .slider {
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	left: 0;
 	top: 0;
@@ -955,19 +974,25 @@ body.home .slide {
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding-top: 43.75%;
 	background-size: cover;
 	background-position: center center;
 	height: 600px;
 }
 
+body.home .slide-excerpt-wrap {
+	position: relative;
+	height: 600px;
+	z-index: 99;
+}
+
 body.home .slide-inner {
 	color: white;
-	position: absolute;
-	top: 10%;
+	display: grid;
+	position: relative;
+	top: 30%;
 	left: 65%;
-	padding-right: 40px;
-	height: 600px;
+	max-width: 300px;
+	z-index: 9;
 }
 
 /*--------------------------------------------------------------
