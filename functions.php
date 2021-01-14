@@ -262,3 +262,10 @@ require get_template_directory() . '/inc/customizer.php';
 if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * USE THIS TEMPLATE TO CREATE CUSTOM POST TYPES EASILY
+ *
+ */
+require get_template_directory() . '/post-types/quotes-post-type.php';
+
