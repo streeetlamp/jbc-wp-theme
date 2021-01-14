@@ -24,21 +24,21 @@ get_header();
 				the_row();
 				get_template_part('inc/flex-content-loop');
 			endwhile;
-		endif;
-	endif;
-	wp_reset_postdata();
-	?>
-
-	<nav id="alt-nav" class="alternative-navigation">
+		endif; 
+		?>
+		<nav id="alt-nav" class="alternative-navigation">
 		<?php
 		wp_nav_menu(
 			array(
 				'theme_location' => 'alt-nav',
 				'menu_id'        => 'Alternative',
 			)
-		);
-		wp_reset_postdata(); ?>
+		);?>
 	</nav><!-- #alt-navigation -->
+	<?php
+	endif;
+	wp_reset_postdata();
+	?>
 
 	<?php
 	if (is_front_page()) : ?>
