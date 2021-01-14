@@ -16,25 +16,25 @@
 get_header();
 ?>
 <main id="primary" class="site-main">
+<?php
+	if (have_rows('flexible_content')) :
+		while (have_rows('flexible_content')) :
+		the_row();
+		get_template_part('inc/flex-content-loop');
+	endwhile;
+	endif;
 
-	<?php
 	if (is_front_page()) :
-		if (have_rows('flexible_content')) :
-			while (have_rows('flexible_content')) :
-				the_row();
-				get_template_part('inc/flex-content-loop');
-			endwhile;
-		endif; 
-		?>
+	?>
 		<nav id="alt-nav" class="alternative-navigation">
-		<?php
-		wp_nav_menu(
-			array(
-				'theme_location' => 'alt-nav',
-				'menu_id'        => 'Alternative',
-			)
-		);?>
-	</nav><!-- #alt-navigation -->
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'alt-nav',
+					'menu_id'        => 'Alternative',
+				)
+			); ?>
+		</nav><!-- #alt-navigation -->
 	<?php
 	endif;
 	wp_reset_postdata();
