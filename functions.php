@@ -156,6 +156,25 @@ function jbc_remove_sections($wp_customize)
 }
 add_action('customize_register', 'jbc_remove_sections');
 
+// useful tool to check if live or local
+function we_are_live()
+{
+	$current_server = $_SERVER['HTTP_HOST'];
+
+	if ($current_server == 'jbcdev.wpengine.com') {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+
+// Hide ACF from admin menu if live
+if (we_are_live()) {
+	add_filter('acf/settings/show_admin', '__return_false');
+}
+
+
 /**
  * Register widget area.
  *
@@ -201,6 +220,21 @@ if (!function_exists('remove_wp_open_sans')) :
 	}
 	add_action('wp_enqueue_scripts', 'remove_wp_open_sans');
 endif;
+
+// emoji's actually suck
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+
+/*
+* Customize menu thing is annoying
+*/
+add_action('wp_before_admin_bar_render', 'sculpture_before_admin_bar_render');
+
+function sculpture_before_admin_bar_render()
+{
+	global $wp_admin_bar;
+	$wp_admin_bar->remove_menu('customize');
+}
 
 /**
  * Implement the Custom Header feature.
