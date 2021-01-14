@@ -26,7 +26,7 @@ function quotes_post_type() {
 			'show_ui' => true,
 			'query_var' => true,
 			'menu_position' => 8, /* this is what order you want it to appear in on the left hand side menu */ 
-			'menu_icon' => 'dashicons-businessman', /* the icon for the Quotes or Staff type menu */
+			'menu_icon' => 'dashicons-format-quote', /* the icon for the Quotes or Staff type menu */
 			'rewrite'	=> array( 'slug' => 'quotes', 'with_front' => false ), /* you can specify its url slug */
 			'has_archive' => 'quotes', /* you can rename the slug here */
 			'capability_type' => 'post',
