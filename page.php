@@ -16,7 +16,7 @@
 get_header();
 ?>
 <main id="primary" class="site-main">
-	
+
 	<?php
 	if (is_front_page()) :
 		if (have_rows('flexible_content')) :
@@ -26,11 +26,21 @@ get_header();
 			endwhile;
 		endif;
 	endif;
-	?>
+	wp_reset_postdata(); ?>
+
 
 	<?php
 
 	if (is_front_page()) : ?>
+		<?php
+		$the_query = new WP_Query(array('post_type' => 'quotes'));
+		if ($the_query->have_posts()) :
+			while ($the_query->have_posts()) : $the_query->the_post(); ?>
+				<h2><?php the_content(); ?></h2>
+		<?php endwhile;
+		endif;
+		wp_reset_postdata(); ?>
+
 		<nav id="alt-nav" class="alternative-navigation">
 			<?php
 			wp_nav_menu(
