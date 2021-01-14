@@ -27,5 +27,10 @@ textarea {
   }
 }
 
+.home-quote {
+  display: grid;
+  justify-content: center;
+}
+
 @import "headings";
 @import "copy";
