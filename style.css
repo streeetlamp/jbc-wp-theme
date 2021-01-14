@@ -51,7 +51,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 @import url(https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento+Sans&family=Quattrocento:wght@400;700&display=swap);
 body.home .site-main {
-	margin-top: 450px;
+	margin-top: 480px;
 }
 
 /*--------------------------------------------------------------
@@ -482,6 +482,10 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
+	background: #FFFFFF;
+}
+
+body.home {
 	background: #EBEBEB;
 }
 
@@ -963,7 +967,7 @@ textarea {
 --------------------------------------------- */
 .site-footer {
 	background-color: #2b2e23;
-	color: #EBEBEB;
+	color: #FFFFFF;
 }
 
 .site-footer a {
