@@ -419,6 +419,8 @@ textarea {
 .home-quote {
 	display: grid;
 	justify-content: center;
+	margin: 1.75em 0;
+	font-size: larger;
 }
 
 h1,
@@ -1033,6 +1035,33 @@ body.home .slide-inner {
 	left: 65%;
 	max-width: 300px;
 	z-index: 9;
+}
+
+/* Home Featured Categories
+--------------------------------------------- */
+.home-featured-wrap {
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	padding: 0;
+	margin: 0 0 2em;
+}
+
+.home-featured-wrap div:first-of-type {
+	background-color: #282828;
+}
+
+.home-featured-wrap div:nth-of-type(2) {
+	background-color: #5A5A5A;
+}
+
+.home-featured-wrap div:last-of-type {
+	background-color: #858585;
+}
+
+.home-featured-cat {
+	color: #FFFFFF;
+	line-height: 1.10em;
+	padding: 2em 1.35em 2em 1.35em;
 }
 
 /*--------------------------------------------------------------

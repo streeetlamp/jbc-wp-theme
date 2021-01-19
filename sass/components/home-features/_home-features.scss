@@ -1,0 +1,24 @@
+.home-featured-wrap {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  padding: 0;
+  margin: 0 0 2em;
+
+  div:first-of-type {
+      background-color: $color__gray-dark;
+  }
+
+  div:nth-of-type(2) {
+      background-color: $color__gray-med;
+  }
+
+  div:last-of-type {
+      background-color: $color__gray-lite;
+  }
+}
+
+.home-featured-cat {
+  color: $color__norm-white;
+  line-height: 1.10em;
+  padding: 2em 1.35em 2em 1.35em;
+}

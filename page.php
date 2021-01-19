@@ -58,30 +58,21 @@ get_header();
 	endif;
 	wp_reset_postdata();
 
-	// $feat_cats = class_exists('acf') ? get_field('home_featured_posts', 'options') : null;
-
-	// if ($feat_cats):
-	// echo print_r($feat_cats, true);
-
-	// endif;
-
-// Check rows exists.
 if( have_rows('home_featured_posts', 'options') ):
-
-    // Loop through rows.
+		echo("<div class='home-featured-wrap'>");
     while( have_rows('home_featured_posts', 'options') ) : the_row();
-
-        // Load sub field value.
-        $sub_value = get_sub_field('headline');
-        // Do something...
-				echo($sub_value);
-    // End loop.
+				$headline = get_sub_field('headline');
+        $description = get_sub_field('description');
+        // $featured = get_sub_field('post_feature');
+				// echo(print_r($featured, true));
+				echo("<div class='home-featured-cat'>");
+					echo ("<h4>".$headline."</h4>");
+					echo ("<small>".$description."</small>");
+				echo("</div>");
     endwhile;
-
-// No value.
-else :
-    // Do something...
-endif; ?>
+		echo("</div>");
+endif;
+?>
 
 
 </main><!-- #main -->
