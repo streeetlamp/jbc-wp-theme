@@ -58,8 +58,32 @@ get_header();
 	endif;
 	wp_reset_postdata();
 
-	$feat_cats = class_exists('acf') ? get_field('home_featured_posts', 'options') : null;
-	// echo print_r($feat_cats, true); ?>
+	// $feat_cats = class_exists('acf') ? get_field('home_featured_posts', 'options') : null;
+
+	// if ($feat_cats):
+	// echo print_r($feat_cats, true);
+
+	// endif;
+
+// Check rows exists.
+if( have_rows('home_featured_posts', 'options') ):
+
+    // Loop through rows.
+    while( have_rows('home_featured_posts', 'options') ) : the_row();
+
+        // Load sub field value.
+        $sub_value = get_sub_field('headline');
+        // Do something...
+				echo($sub_value);
+    // End loop.
+    endwhile;
+
+// No value.
+else :
+    // Do something...
+endif; ?>
+
+
 </main><!-- #main -->
 
 <?php
