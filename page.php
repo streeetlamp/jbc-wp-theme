@@ -16,12 +16,12 @@
 get_header();
 ?>
 <main id="primary" class="site-main">
-<?php
+	<?php
 	if (have_rows('flexible_content')) :
 		while (have_rows('flexible_content')) :
-		the_row();
-		get_template_part('inc/flex-content-loop');
-	endwhile;
+			the_row();
+			get_template_part('inc/flex-content-loop');
+		endwhile;
 	endif;
 
 	if (is_front_page()) :
@@ -56,7 +56,10 @@ get_header();
 	<?php endwhile;
 		endif;
 	endif;
-	wp_reset_postdata(); ?>
+	wp_reset_postdata();
+
+	$feat_cats = class_exists('acf') ? get_field('home_featured_posts', 'options') : null;
+	// echo print_r($feat_cats, true); ?>
 </main><!-- #main -->
 
 <?php
