@@ -1,5 +1,5 @@
 .site-footer {
-    background-color: $color__text-main;
+    background-color: $color__super-black;
     color: $color__background-body;
 
     a {
@@ -8,5 +8,6 @@
 }
 
 .last-modified {
-    margin: 0;
+    margin: 15px 0 20px 0;
+    text-align: center;
 }

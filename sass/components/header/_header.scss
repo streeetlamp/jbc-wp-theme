@@ -1,11 +1,12 @@
 .site-branding {
   display: grid;
-  grid-template-columns: 30% auto 30%;
+  grid-template-columns: 1fr 1fr 1fr;
   max-width: 1200px;
-  margin: 0 0 0 0;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 
   .search-form {
-    align-self: center;
-    justify-self: end;
+    margin-top: 10px;
   }
 }

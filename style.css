@@ -54,6 +54,12 @@ body.home .site-main {
 	margin-top: 480px;
 }
 
+body .site-main {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -664,6 +670,10 @@ textarea {
 --------------------------------------------- */
 .main-navigation {
 	margin: .5em 0 0 0;
+	max-width: 1200px;
+	width: 100vw;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .alternative-navigation {
@@ -835,17 +845,6 @@ textarea {
 --------------------------------------------- */
 .sticky {
 	display: block;
-}
-
-.post,
-.page,
-.single {
-	width: 100%;
-	max-width: 1200px;
-	margin-right: auto;
-	margin-left: auto;
-	zoom: 1;
-	padding: 0 40px;
 }
 
 .updated:not(.published) {
@@ -1286,7 +1285,7 @@ textarea {
 /* Footer
 --------------------------------------------- */
 .site-footer {
-	background-color: #2b2e23;
+	background-color: black;
 	color: #FFFFFF;
 }
 
@@ -1295,21 +1294,23 @@ textarea {
 }
 
 .last-modified {
-	margin: 0;
+	margin: 15px 0 20px 0;
+	text-align: center;
 }
 
 /* Header
 --------------------------------------------- */
 .site-branding {
 	display: grid;
-	grid-template-columns: 30% auto 30%;
+	grid-template-columns: 1fr 1fr 1fr;
 	max-width: 1200px;
-	margin: 0 0 0 0;
+	width: 100vw;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .site-branding .search-form {
-	align-self: center;
-	justify-self: end;
+	margin-top: 10px;
 }
 
 /* Slider

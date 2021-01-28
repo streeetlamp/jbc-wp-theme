@@ -2,16 +2,12 @@
   display: block;
 }
 
-.post,
-.page,
-.single {
-  width: 100%;
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  zoom: 1;
-  padding: 0 40px;
-}
+// .post,
+// .page,
+// .single {
+//   width: 100%;
+//   zoom: 1;
+// }
 
 .updated:not(.published) {
   display: none;
