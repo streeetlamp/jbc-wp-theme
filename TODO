@@ -1,10 +1,10 @@
 FEATURE PUNCH DOWN LIST
 ☐ Search 
-☐ home featured categories
+✔ home featured pages/posts @done(21-01-28 12:07)
 ☐ Ability to aggregate content by tags like year, topic, etc
 ☐ Customizable front page (SWHP example) which may include embedded audio, video, images, feeds from other platforms or quatations
 ☐ Pull quotes on posts
-☐ Ability to add text over and below hero text (see mockup)
+✔ Ability to add text over and below hero text (see mockup) @done(21-01-28 12:05)
 ☐ Possible tag cloud of sorts?
 ☐ Searchable and taggable media library (omeka as example possibly?)
 ☐ Newsletter subscriptions
@@ -21,6 +21,6 @@ FEATURE PUNCH DOWN LIST
 ✔ add Oswald type @done(21-01-12 13:12)
 ☐ bibliography post type?
 ✔ home rotating quotes post type @done(21-01-14 16:06)
-☐ home featured taxonomy should actually just be posts
+✔ home featured taxonomy should actually just be posts @done(21-01-28 12:04)
 ☐ Cabell writes in Latin, Greek, French, English (maybe others). look into if supported correctly
 ☐ body font =? https://fonts.google.com/specimen/EB+Garamond
