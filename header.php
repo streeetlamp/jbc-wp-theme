@@ -41,7 +41,7 @@
 			$jbc_description = get_bloginfo( 'description', 'display' );
 			if ( $jbc_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $jbc_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+				<span class="site-description"><?php echo $jbc_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
 			<?php endif;
 						get_search_form();
 			?>

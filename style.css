@@ -405,13 +405,6 @@ textarea {
 	line-height: 1.5;
 }
 
-.site-description {
-	margin: 0;
-	display: grid;
-	align-items: end;
-	color: #FFFFFF;
-}
-
 .site-title {
 	font-family: Oswald, sans-serif;
 	margin: 0;
@@ -1303,14 +1296,32 @@ textarea {
 .site-branding {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	max-width: 1200px;
-	width: 100vw;
-	margin-left: auto;
-	margin-right: auto;
+	gap: 20px;
 }
 
 .site-branding .search-form {
 	margin-top: 10px;
+	text-align: right;
+}
+
+.site-branding .search-form input {
+	vertical-align: middle;
+}
+
+.site-description {
+	margin: 0;
+	display: grid;
+	align-items: end;
+	color: #FFFFFF;
+}
+
+.site-header {
+	display: grid;
+	grid-template-columns: 1fr;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
 }
 
 /* Slider
