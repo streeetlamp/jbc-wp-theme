@@ -156,6 +156,27 @@ function jbc_remove_sections($wp_customize)
 }
 add_action('customize_register', 'jbc_remove_sections');
 
+add_action('admin_menu', 'jbc_remove_admin_menus');
+function jbc_remove_admin_menus()
+{
+	remove_menu_page('edit-comments.php');
+}
+// Removes from post and pages
+add_action('init', 'remove_comment_support', 100);
+
+function remove_comment_support()
+{
+	remove_post_type_support('post', 'comments');
+	remove_post_type_support('page', 'comments');
+}
+// Removes from admin bar
+function jbctheme_admin_bar_render()
+{
+	global $wp_admin_bar;
+	$wp_admin_bar->remove_menu('comments');
+}
+add_action('wp_before_admin_bar_render', 'jbctheme_admin_bar_render');
+
 // useful tool to check if live or local
 function we_are_live()
 {
@@ -205,11 +226,12 @@ function jbc_scripts()
 
 	wp_enqueue_script('jbc-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
 
-	if (is_singular() && comments_open() && get_option('thread_comments')) {
-		wp_enqueue_script('comment-reply');
-	}
+	// if (is_singular() && comments_open() && get_option('thread_comments')) {
+	// 	wp_enqueue_script('comment-reply');
+	// }
 }
 add_action('wp_enqueue_scripts', 'jbc_scripts');
+
 
 // Remove Open Sans that WP adds from frontend
 if (!function_exists('remove_wp_open_sans')) :
