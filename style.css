@@ -845,7 +845,7 @@ textarea {
 	background-color: #282828;
 }
 
-body.home header {
+body.home header.site-header {
 	background-color: transparent;
 }
 
