@@ -2,12 +2,10 @@
   margin: .5em 0 0 0;
   max-width: 1200px;
   width: 100vw;
-  margin-left: auto;
-  margin-right: auto;
+  @include center-block;
 }
 
 .alternative-navigation {
-  top: 700px;
   gap: 0 !important;
 
   ul {

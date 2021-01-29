@@ -1,13 +1,21 @@
 .site-footer {
     background-color: $color__super-black;
     color: $color__background-body;
+    width: 100%;
 
     a {
         color: $color__alt-dark;
     }
+
+    .info-footer {
+        max-width: 1200px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .last-modified {
-    margin: 15px 0 20px 0;
+    margin: 20px 0 0 0;
     text-align: center;
 }

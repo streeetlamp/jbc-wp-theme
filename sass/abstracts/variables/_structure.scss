@@ -1,12 +1,13 @@
 $size__site-main: 100%;
 $size__site-sidebar: 25%;
 
-body.home .site-main {
-  margin-top: 480px;
-}
+
 
 body .site-main {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
+  grid-area: main;
+  overflow: hidden;
+  /* Resolves issue with <pre> elements forcing full width. */
 }

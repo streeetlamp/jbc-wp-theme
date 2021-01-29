@@ -50,14 +50,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 --------------------------------------------------------------*/
 @import url(https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento+Sans&family=Quattrocento:wght@400;700&display=swap);
-body.home .site-main {
-	margin-top: 480px;
-}
-
 body .site-main {
 	max-width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
+	grid-area: main;
+	overflow: hidden;
+	/* Resolves issue with <pre> elements forcing full width. */
 }
 
 /*--------------------------------------------------------------
@@ -665,12 +664,12 @@ textarea {
 	margin: .5em 0 0 0;
 	max-width: 1200px;
 	width: 100vw;
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .alternative-navigation {
-	top: 700px;
 	gap: 0 !important;
 }
 
@@ -838,6 +837,16 @@ textarea {
 --------------------------------------------- */
 .sticky {
 	display: block;
+}
+
+.post header.site-header,
+.page header.site-header,
+.single header.site-header {
+	background-color: #282828;
+}
+
+body.home header {
+	background-color: transparent;
 }
 
 .updated:not(.published) {
@@ -1280,14 +1289,22 @@ textarea {
 .site-footer {
 	background-color: black;
 	color: #FFFFFF;
+	width: 100%;
 }
 
 .site-footer a {
 	color: #f5b700;
 }
 
+.site-footer .info-footer {
+	max-width: 1200px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .last-modified {
-	margin: 15px 0 20px 0;
+	margin: 20px 0 0 0;
 	text-align: center;
 }
 
@@ -1316,6 +1333,11 @@ textarea {
 }
 
 .site-header {
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.site-header .header-inner {
 	display: grid;
 	grid-template-columns: 1fr;
 	display: block;
@@ -1327,13 +1349,14 @@ textarea {
 /* Slider
 --------------------------------------------- */
 body.home .slider {
-	position: absolute;
+	position: relative;
 	width: 100%;
 	left: 0;
-	top: 0;
+	top: -110px;
 	z-index: -2;
 	margin: 0;
 	height: 600px;
+	margin-bottom: -135px;
 }
 
 body.home .slide {
@@ -1348,8 +1371,11 @@ body.home .slide {
 
 body.home .slide-excerpt-wrap {
 	position: relative;
-	height: 600px;
-	z-index: 99;
+	max-width: 1200px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	top: 25%;
 }
 
 body.home .slide-inner {

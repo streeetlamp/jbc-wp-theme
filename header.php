@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The header for our theme
  *
@@ -12,8 +13,9 @@
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
+
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
@@ -21,40 +23,53 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'jbc' ); ?></a>
+	<?php wp_body_open(); ?>
+	<div id="page" class="site">
+		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'jbc'); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
+		<header id="masthead" class="site-header">
+			<div class="header-inner">
+				<div class="site-branding">
+					<?php
+					the_custom_logo();
+					if (is_front_page() && is_home()) :
+					?>
+						<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+					<?php
+					else :
+					?>
+						<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+					<?php
+					endif;
+					$jbc_description = get_bloginfo('description', 'display');
+					if ($jbc_description || is_customize_preview()) :
+					?>
+						<span class="site-description"><?php echo $jbc_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+																						?></span>
+					<?php endif;
+					get_search_form();
+					?>
+				</div><!-- .site-branding -->
+
+				<nav id="site-navigation" class="main-navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'jbc'); ?></button>
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						)
+					); ?>
+				</nav><!-- #site-navigation -->
+			</div>
+		</header><!-- #masthead -->
+		<?php
+		if (is_front_page()) :
+			if (have_rows('flexible_content')) :
+				while (have_rows('flexible_content')) :
+					the_row();
+					get_template_part('inc/flex-content-loop');
+				endwhile;
 			endif;
-			$jbc_description = get_bloginfo( 'description', 'display' );
-			if ( $jbc_description || is_customize_preview() ) :
-				?>
-				<span class="site-description"><?php echo $jbc_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
-			<?php endif;
-						get_search_form();
-			?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'jbc' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+		endif;
+		?>

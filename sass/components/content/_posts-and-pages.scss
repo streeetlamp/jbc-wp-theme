@@ -2,12 +2,19 @@
   display: block;
 }
 
-// .post,
-// .page,
-// .single {
-//   width: 100%;
-//   zoom: 1;
-// }
+.post,
+.page,
+.single {
+  header.site-header {
+    background-color: $color__gray-dark;
+  }
+}
+
+body.home {
+  header {
+    background-color: transparent;
+  }
+}
 
 .updated:not(.published) {
   display: none;

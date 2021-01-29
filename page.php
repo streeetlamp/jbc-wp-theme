@@ -17,15 +17,19 @@ get_header();
 ?>
 <main id="primary" class="site-main">
 	<?php
-	if (have_rows('flexible_content')) :
-		while (have_rows('flexible_content')) :
-			the_row();
-			get_template_part('inc/flex-content-loop');
-		endwhile;
+	if (!is_front_page()) :
+		if (have_rows('flexible_content')) :
+			while (have_rows('flexible_content')) :
+				the_row();
+				get_template_part('inc/flex-content-loop');
+			endwhile;
+		endif;
 	endif;
-
-	if (is_front_page()) :
+	wp_reset_postdata();
 	?>
+
+	<?php
+	if (is_front_page()) : ?>
 		<nav id="alt-nav" class="alternative-navigation">
 			<?php
 			wp_nav_menu(
@@ -35,13 +39,6 @@ get_header();
 				)
 			); ?>
 		</nav><!-- #alt-navigation -->
-	<?php
-	endif;
-	wp_reset_postdata();
-	?>
-
-	<?php
-	if (is_front_page()) : ?>
 		<?php
 		$arg = array(
 			'orderby'        => 'rand',
