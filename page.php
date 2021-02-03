@@ -16,17 +16,7 @@
 get_header();
 ?>
 <main id="primary" class="site-main">
-	<?php
-	if (!is_front_page()) :
-		if (have_rows('flexible_content')) :
-			while (have_rows('flexible_content')) :
-				the_row();
-				get_template_part('inc/flex-content-loop');
-			endwhile;
-		endif;
-	endif;
-	wp_reset_postdata();
-	?>
+
 
 	<?php
 	if (is_front_page()) : ?>

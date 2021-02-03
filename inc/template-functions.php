@@ -39,18 +39,3 @@ function jbc_pingback_header()
 }
 add_action('wp_head', 'jbc_pingback_header');
 
-if (!function_exists('the_field')) {
-	add_action('admin_notices', 'jbc_acf_notice');
-}
-
-/**
- * ACF jbc Notice.
- */
-function jbc_acf_notice()
-{
-?>
-	<div class="update-nag notice" style="display:block; margin:20px 0;">
-		<h3><?php echo  'Install Advanced Custom Fields Pro please or nothing will work probably!'; ?></h3>
-	</div>
-<?php
-}

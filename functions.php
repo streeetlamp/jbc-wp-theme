@@ -121,7 +121,7 @@ add_action('after_setup_theme', 'jbc_setup');
  */
 function jbc_content_width()
 {
-	$GLOBALS['content_width'] = apply_filters('jbc_content_width', 640);
+	$GLOBALS['content_width'] = apply_filters('jbc_content_width', 1200);
 }
 add_action('after_setup_theme', 'jbc_content_width', 0);
 
@@ -239,9 +239,9 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 /*
 * Customize menu thing is annoying
 */
-add_action('wp_before_admin_bar_render', 'sculpture_before_admin_bar_render');
+add_action('wp_before_admin_bar_render', 'jbc_before_admin_bar_render');
 
-function sculpture_before_admin_bar_render()
+function jbc_before_admin_bar_render()
 {
 	global $wp_admin_bar;
 	$wp_admin_bar->remove_menu('customize');

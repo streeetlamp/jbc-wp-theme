@@ -63,13 +63,3 @@
 				</nav><!-- #site-navigation -->
 			</div>
 		</header><!-- #masthead -->
-		<?php
-		if (is_front_page()) :
-			if (have_rows('flexible_content')) :
-				while (have_rows('flexible_content')) :
-					the_row();
-					get_template_part('inc/flex-content-loop');
-				endwhile;
-			endif;
-		endif;
-		?>

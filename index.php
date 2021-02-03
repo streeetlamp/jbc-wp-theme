@@ -51,15 +51,6 @@ get_header();
 	endif;
 	?>
 
-	<?php
-	// check if the flexible content field has rows of data
-	if (have_rows('flexible_content')) :
-		while (have_rows('flexible_content')) :
-			the_row();
-			get_template_part('inc/flex-content-loop');
-		endwhile;
-	endif;
-	?>
 
 </main><!-- #main -->
 
