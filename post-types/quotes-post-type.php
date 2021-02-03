@@ -25,7 +25,7 @@ function quotes_post_type() {
 			'exclude_from_search' => false,
 			'show_ui' => true,
 			'query_var' => true,
-			'menu_position' => 8, /* this is what order you want it to appear in on the left hand side menu */ 
+			'menu_position' => 20, /* this is what order you want it to appear in on the left hand side menu */ 
 			'menu_icon' => 'dashicons-format-quote', /* the icon for the Quotes or Staff type menu */
 			'rewrite'	=> array( 'slug' => 'quotes', 'with_front' => false ), /* you can specify its url slug */
 			'has_archive' => 'quotes', /* you can rename the slug here */
