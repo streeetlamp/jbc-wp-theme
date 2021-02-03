@@ -63,3 +63,30 @@
 				</nav><!-- #site-navigation -->
 			</div>
 		</header><!-- #masthead -->
+		<?php
+		if (is_front_page()) : ?>
+			<div class="slider slider-wrap slide-fade flex-row" data-autoplay="true" data-slidespeed="7500" data-slidedots="true">
+				<div class="slider-list">
+					<?php
+					// vars
+					$image = get_field('image');
+					$excerpt = get_field('excerpt');
+					$headline = get_field('headline');
+					?>
+
+					<div class="slide" style="background-image:url('<?php echo $image['sizes']['large']; ?>');">
+						<?php if ($image) : ?>
+							<div class="slide-excerpt-wrap">
+								<div class="slide-inner">
+									<h2 class="slide-headline"><?php echo $headline; ?></h2>
+									<div class="slide-excerpt"><?php echo $excerpt; ?></div>
+								</div>
+							</div>
+						<?php endif; ?>
+					</div>
+
+
+				</div>
+			</div> <?php
+						endif;
+							?>
