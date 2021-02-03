@@ -90,17 +90,6 @@ if (!function_exists('jbc_setup')) :
 			)
 		);
 
-		// Set up the WordPress core custom background feature.
-		add_theme_support(
-			'custom-background',
-			apply_filters(
-				'jbc_custom_background_args',
-				array(
-					'default-color' => 'ffffff',
-					'default-image' => '',
-				)
-			)
-		);
 
 		// Add theme support for selective refresh for widgets.
 		// add_theme_support( 'customize-selective-refresh-widgets' );
