@@ -2,13 +2,13 @@ FEATURE PUNCH DOWN LIST
 ☐ Search 
 ✔ home featured pages/posts @done(21-01-28 12:07)
 ☐ Ability to aggregate content by tags like year, topic, etc
-☐ Customizable front page (SWHP example) which may include embedded audio, video, images, feeds from other platforms or quatations
-☐ Pull quotes on posts
+✔ Customizable front page (SWHP example) which may include embedded audio, video, images, feeds from other platforms or quatations @done(21-02-03 16:49)
+☐ Pull quotes on posts ( excerpt? )
 ✔ Ability to add text over and below hero text (see mockup) @done(21-01-28 12:05)
 ☐ Possible tag cloud of sorts?
 ☐ Searchable and taggable media library (omeka as example possibly?)
 ☐ Newsletter subscriptions
-☐ Featured Images (ex: SWHP)
+✔ Featured Images (ex: SWHP) @done(21-02-03 16:49)
 ☐ Excerpts for browsing type pages
 ✔ Main and Alternative Navigation @done(21-01-07 14:04)
 ☐ Style Main and Alternative Navigation 
