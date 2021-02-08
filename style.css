@@ -417,8 +417,12 @@ textarea {
 .home-quote {
 	display: grid;
 	justify-content: center;
-	margin: 1.75em 0;
-	font-size: larger;
+	font-size: x-large;
+}
+
+.home-quote p {
+	text-align: center;
+	padding: 40px;
 }
 
 h1,
