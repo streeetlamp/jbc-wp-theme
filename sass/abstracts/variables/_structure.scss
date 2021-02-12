@@ -9,5 +9,6 @@ body .site-main {
   margin-left: auto;
   grid-area: main;
   overflow: hidden;
+  margin-bottom: 2em;
   /* Resolves issue with <pre> elements forcing full width. */
 }

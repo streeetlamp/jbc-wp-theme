@@ -22,8 +22,9 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				jbc_posted_on();
-				jbc_posted_by();
+				jbc_entry_footer();
+				// jbc_posted_on();
+				// jbc_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -48,16 +49,9 @@
 			)
 		);
 
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jbc' ),
-				'after'  => '</div>',
-			)
-		);
 		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php jbc_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
