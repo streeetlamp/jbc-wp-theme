@@ -19,3 +19,14 @@
     margin: 20px 0 0 0;
     text-align: center;
 }
+
+.jetpack_subscription_widget {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    max-width: 35%;
+
+    .widgettitle {
+        display: none;
+    }
+}

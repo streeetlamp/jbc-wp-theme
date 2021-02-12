@@ -1314,6 +1314,17 @@ body.home header.site-header {
 	text-align: center;
 }
 
+.jetpack_subscription_widget {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto 0 auto;
+	max-width: 35%;
+}
+
+.jetpack_subscription_widget .widgettitle {
+	display: none;
+}
+
 /* Header
 --------------------------------------------- */
 .site-branding {

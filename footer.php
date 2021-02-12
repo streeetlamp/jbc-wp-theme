@@ -24,6 +24,11 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
+		<?php
+		if (shortcode_exists('jetpack_subscription_form')) {
+			echo do_shortcode('[jetpack_subscription_form title="Subscribe for Updates" subscribe_text="Enter your email address to subscribe and receive notifications of new updates by email."]');
+		}
+		?>
 		<p class="last-modified"><small>Last modified: <?php the_modified_time('F j, Y'); ?></small></p>
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->
