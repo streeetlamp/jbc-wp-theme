@@ -846,7 +846,8 @@ textarea {
 
 .post header.site-header,
 .page header.site-header,
-.single header.site-header {
+.single header.site-header,
+.search header.site-header {
 	background-color: #282828;
 }
 
