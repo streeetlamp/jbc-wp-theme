@@ -1,7 +1,8 @@
 FEATURE PUNCH DOWN LIST
-☐ Search 
+✔ Search @done(21-02-25 12:47)
 ✔ Search results page has transparent header @done(21-02-12 11:43)
 ✔ home featured pages/posts @done(21-01-28 12:07)
+☐ Implement Todd style and markup edits
 ☐ Ability to aggregate content by tags like year, topic, etc
 ✔ Customizable front page (SWHP example) which may include embedded audio, video, images, feeds from other platforms or quatations @done(21-02-03 16:49)
 ☐ Pull quotes on posts ( excerpt? )
@@ -23,4 +24,4 @@ FEATURE PUNCH DOWN LIST
 ✔ home rotating quotes post type @done(21-01-14 16:06)
 ✔ home featured taxonomy should actually just be posts @done(21-01-28 12:04)
 ☐ Cabell writes in Latin, Greek, French, English (maybe others). look into if supported correctly
-☐ body font =? https://fonts.google.com/specimen/EB+Garamond
+✔ body font =? https://fonts.google.com/specimen/EB+Garamond @done(21-02-25 12:46)
