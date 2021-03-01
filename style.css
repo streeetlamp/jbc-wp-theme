@@ -51,6 +51,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 @import url(https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Quattrocento+Sans&family=Oswald&display=swap);
 body .site-main {
+	max-width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
 	grid-area: main;
@@ -415,12 +416,6 @@ textarea {
 	color: #FFFFFF !important;
 }
 
-h1.site-title {
-	font-size: 3rem;
-	grid-column: 1/span 1;
-	grid-row: 1/span 1;
-}
-
 .home-quote {
 	display: grid;
 	justify-content: center;
@@ -674,6 +669,7 @@ textarea {
 --------------------------------------------- */
 .main-navigation {
 	margin: .5em 0 0 0;
+	max-width: 1200px;
 	width: 100vw;
 	display: block;
 	margin-left: auto;
@@ -695,6 +691,14 @@ textarea {
 
 .menu-top-nav-container a {
 	color: #FFFFFF;
+}
+
+.main-navigation,
+.footer-navigation,
+.alternative-navigation {
+	display: grid;
+	width: 100%;
+	gap: 20px;
 }
 
 .main-navigation ul,
@@ -732,6 +736,12 @@ textarea {
 .alternative-navigation ul ul li.focus > ul {
 	display: block;
 	left: auto;
+}
+
+.main-navigation ul ul a,
+.footer-navigation ul ul a,
+.alternative-navigation ul ul a {
+	width: 200px;
 }
 
 .main-navigation ul li:hover > ul,
@@ -1319,36 +1329,40 @@ body.home header.site-header {
 
 /* Header
 --------------------------------------------- */
+.site-branding {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+}
+
 .site-branding .search-form {
-	grid-column: 3/span 9;
-	grid-row: 1/span 1;
-	justify-self: end;
-	margin-block-end: 0;
-	align-self: center;
+	margin-top: 10px;
+	text-align: right;
 }
 
 .site-branding .search-form input {
-	border: none;
-	height: 35px;
-	padding: 0.5rem 1rem;
-	border-radius: 5px 0 0 5px;
-	margin-right: -4px;
-	width: 300px;
+	vertical-align: middle;
 }
 
 .site-description {
 	margin: 0;
+	display: grid;
+	align-items: end;
 	color: #FFFFFF;
-	font-family: "EB Garamond";
-	text-transform: none;
-	font-weight: 400;
-	margin-bottom: 5px;
 }
 
 .site-header {
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.site-header .header-inner {
 	display: grid;
-	grid-template-columns: 430px 294px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 70px 45px;
+	grid-template-columns: 1fr;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
 }
 
 header.entry-header .entry-title {

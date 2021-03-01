@@ -28,6 +28,8 @@
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'jbc'); ?></a>
 
 		<header id="masthead" class="site-header">
+			<div class="header-inner">
+				<div class="site-branding">
 					<?php
 					the_custom_logo();
 					if (is_front_page() && is_home()) :
@@ -42,11 +44,12 @@
 					$jbc_description = get_bloginfo('description', 'display');
 					if ($jbc_description || is_customize_preview()) :
 					?>
-						<h2 class="site-description"><?php echo $jbc_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
-																						?></h2>
+						<span class="site-description"><?php echo $jbc_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+																						?></span>
 					<?php endif;
 					get_search_form();
 					?>
+				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'jbc'); ?></button>
@@ -58,6 +61,7 @@
 						)
 					); ?>
 				</nav><!-- #site-navigation -->
+			</div>
 		</header><!-- #masthead -->
 		<?php
 		if (is_front_page()) : ?>

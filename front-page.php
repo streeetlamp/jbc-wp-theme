@@ -42,7 +42,7 @@ get_header();
 	wp_reset_postdata();
 
 	if (have_rows('home_featured_posts', 'options')) :
-		echo ("<div class='home-featured-wrap trending'>");
+		echo ("<div class='home-featured-wrap'>");
 		while (have_rows('home_featured_posts', 'options')) : the_row();
 			$headline = get_sub_field('subheadline');
 			$description = get_sub_field('description');
