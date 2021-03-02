@@ -28,14 +28,3 @@ function jbc_body_classes($classes)
 }
 add_filter('body_class', 'jbc_body_classes');
 
-/**
- * Add a pingback url auto-discovery header for single posts, pages, or attachments.
- */
-function jbc_pingback_header()
-{
-	if (is_singular() && pings_open()) {
-		printf('<link rel="pingback" href="%s">', esc_url(get_bloginfo('pingback_url')));
-	}
-}
-add_action('wp_head', 'jbc_pingback_header');
-
