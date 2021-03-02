@@ -14,22 +14,17 @@
 }
 
 .site-description {
-  margin: 0;
-  display: grid;
-  align-items: end;
-  color: $color__norm-white;
+  font-family: $font__main;
+  text-transform: none;
+  font-weight: 400;
+  margin-bottom: 5px;
 }
 
 .site-header {
-  width: 100%;
-  padding-bottom: 20px;
-
-  .header-inner {
-    display: grid;
-    grid-template-columns: 1fr;
-    @include center-block;
-    max-width: 1200px;
-  }
+  display: grid;
+  grid-template-columns: 430px 294px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 70px 45px;
+  color: $color__norm-white;
 }
 
 header.entry-header {
