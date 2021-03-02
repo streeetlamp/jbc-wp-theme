@@ -27,7 +27,8 @@
   .header-inner {
     display: grid;
     grid-template-columns: 1fr;
-
+    @include center-block;
+    max-width: 1200px;
   }
 }
 
