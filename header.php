@@ -26,42 +26,48 @@
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'jbc'); ?></a>
-
-		<header id="masthead" class="site-header">
-				<div class="site-branding">
-					<?php
-					the_custom_logo();
-					if (is_front_page() && is_home()) :
-					?>
-						<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
-					<?php
-					else :
-					?>
-						<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
-					<?php
-					endif;
-					$jbc_description = get_bloginfo('description', 'display');
-					if ($jbc_description || is_customize_preview()) :
-					?>
-						<h2 class="site-description"><?php echo $jbc_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
-																						?></h2>
-					<?php endif;
-					get_search_form();
-					?>
-				</div><!-- .site-branding -->
-
-				<nav id="site-navigation" class="main-navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'jbc'); ?></button>
-					<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'menu-1',
-							'menu_id'        => 'primary-menu',
-						)
-					); ?>
-				</nav><!-- #site-navigation -->
-		</header><!-- #masthead -->
-		<?php
+        <section class="hero">
+            <header id="masthead" class="site-header">
+                <?php
+                the_custom_logo();
+                if (is_front_page() && is_home()) :
+                ?>
+                    <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+                <?php
+                else :
+                ?>
+                    <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+                <?php
+                endif;
+                $jbc_description = get_bloginfo('description', 'display');
+                if ($jbc_description || is_customize_preview()) :
+                ?>
+                    <h2 class="site-description">
+                        <?php echo $jbc_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+                </h2>
+                <?php endif;
+                get_search_form();
+                ?>
+                <nav id="site-navigation" class="main-navigation">
+                    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'jbc'); ?></button>
+                    <?php
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'menu-1',
+                            'menu_id'        => 'primary-menu',
+                        )
+                    ); ?>
+                </nav><!-- #site-navigation -->
+                <ul class="social">
+                    <li><span class="fab fa-facebook-square"></span></li>
+                    <li><span class="fab fa-twitter"></span></li>
+                    <li><span class="fab fa-instagram"></span></li>
+                    <li><span class="fas fa-envelope-open-text"></span></li>
+                    <li><span class="fas fa-donate"></span> Donate</li>
+                </ul>
+            </header><!-- #masthead -->
+        </section>
+		<!-- <?php
 		if (is_front_page()) : ?>
 			<div class="slider slider-wrap slide-fade flex-row" data-autoplay="true" data-slidespeed="7500" data-slidedots="true">
 				<div class="slider-list">
@@ -81,7 +87,7 @@
 								</div>
 							</div>
 						<?php endif; ?>
-					</div>
+					</div> -->
 
 
 				</div>
