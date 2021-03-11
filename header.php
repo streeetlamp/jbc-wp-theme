@@ -71,7 +71,7 @@
                 $excerpt = get_field('excerpt');
                 $headline = get_field('headline'); ?>
                 <div class="hero-text">
-                    <h2 class=" hero-text--heading"><?php echo $headline; ?></h2>
+                    <h2 class="hero-text--heading"><?php echo $headline; ?></h2>
                     <p class="hero-text--desc"><?php echo $excerpt; ?></p>
                 </div>
             <?php
