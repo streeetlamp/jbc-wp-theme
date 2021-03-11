@@ -15,18 +15,17 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-	<meta charset="<?php bloginfo('charset'); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-
-	<?php wp_head(); ?>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-	<?php wp_body_open(); ?>
-	<div id="page" class="site">
-		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'jbc'); ?></a>
-        <section class="hero">
+    <?php wp_body_open(); ?>
+    <div id="page" class="site">
+        <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'jbc'); ?></a>
+        <section class="hero" <?php if (is_front_page()) : $image = get_field('image'); ?>style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)), url('<?php echo $image['sizes']['large']; ?>');" <?php endif; ?>>
             <header id="masthead" class="site-header">
                 <?php
                 the_custom_logo();
@@ -43,8 +42,9 @@
                 if ($jbc_description || is_customize_preview()) :
                 ?>
                     <h2 class="site-description">
-                        <?php echo $jbc_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-                </h2>
+                        <?php echo $jbc_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+                        ?>
+                    </h2>
                 <?php endif;
                 get_search_form();
                 ?>
@@ -66,31 +66,14 @@
                     <li><span class="fas fa-donate"></span> Donate</li>
                 </ul>
             </header><!-- #masthead -->
+            <?php
+            if (is_front_page()) :
+                $excerpt = get_field('excerpt');
+                $headline = get_field('headline'); ?>
+                <div class="hero-text">
+                    <h2 class=" hero-text--heading"><?php echo $headline; ?></h2>
+                    <p class="hero-text--desc"><?php echo $excerpt; ?></p>
+                </div>
+            <?php
+            endif; ?>
         </section>
-		<!-- <?php
-		if (is_front_page()) : ?>
-			<div class="slider slider-wrap slide-fade flex-row" data-autoplay="true" data-slidespeed="7500" data-slidedots="true">
-				<div class="slider-list">
-					<?php
-					// vars
-					$image = get_field('image');
-					$excerpt = get_field('excerpt');
-					$headline = get_field('headline');
-					?>
-
-					<div class="slide" style="background-image:url('<?php echo $image['sizes']['large']; ?>');">
-						<?php if ($image) : ?>
-							<div class="slide-excerpt-wrap">
-								<div class="slide-inner">
-									<h2 class="slide-headline"><?php echo $headline; ?></h2>
-									<div class="slide-excerpt"><?php echo $excerpt; ?></div>
-								</div>
-							</div>
-						<?php endif; ?>
-					</div> -->
-
-
-				</div>
-			</div> <?php
-						endif;
-							?>
