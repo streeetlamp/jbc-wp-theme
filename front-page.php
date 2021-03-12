@@ -17,7 +17,7 @@ get_header();
 ?>
 <main id="primary" class="site-main">
 
-		<nav id="alt-nav" class="alternative-navigation">
+		<nav id="alt-nav" class="alt-nav">
 			<?php
 			wp_nav_menu(
 				array(

@@ -1,3 +1,44 @@
+.alt-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: -30px;
+    @media (max-width:1199px) {
+        position: static;
+    }
+    ul {
+        margin: 0;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        color: #fff;
+        height: 60px;
+        font-family: 'Oswald';
+        text-transform: uppercase;
+        &:first-of-type {
+            background-color: #000000;
+        }
+        &:nth-of-type(2) {
+            background-color: #222;
+        }
+        &:nth-of-type(3) {
+            background-color: #444;
+        }
+    }
+}
+
 .home-featured-wrap {
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
