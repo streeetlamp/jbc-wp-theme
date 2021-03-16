@@ -42,20 +42,24 @@ get_header();
 	wp_reset_postdata();
 
 	if (have_rows('home_featured_posts', 'options')) :
-		echo ("<div class='home-featured-wrap'>");
+		echo ("<section class='home-featured-wrap'>");
+        echo ("<ul>");
 		while (have_rows('home_featured_posts', 'options')) : the_row();
 			$headline = get_sub_field('subheadline');
 			$description = get_sub_field('description');
 			$featured = get_sub_field('post_feature');
 			$link = get_permalink($featured->ID);
 			$title = $featured->post_title;
-			echo ("<div class='home-featured-cat'>");
-			echo ("<h5 style='margin:20px 0 0;'><small>" . $headline . "</small></h5>");
-			echo ("<h4 style='margin:5px 0 15px;'><a href='" . $link . "'>" . $title . "</a></h4>");
-			echo ("<small>" . $description . "</small>");
+			echo ("<li class='home-featured-cat'>");
+            echo ("<div>");
+			echo ("<span>" . $headline . "</span>");
+			echo ("<h2><a href='" . $link . "'>" . $title . "</a></h2>");
+			echo ("<p>" . $description . "</p>");
 			echo ("</div>");
+            echo ("</li>");
 		endwhile;
-		echo ("</div>");
+        echo ("</ul>");
+		echo ("</section>");
 	endif;
 	?>
 
