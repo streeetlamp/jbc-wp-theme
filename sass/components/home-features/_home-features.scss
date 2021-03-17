@@ -1,11 +1,11 @@
 .alt-nav {
     max-width: 1200px;
-    margin: 0 auto;
-    // position: relative;
-    margin-top: -30px;
-
+    margin: -30px auto 0;
     @media (max-width:1199px) {
         position: static;
+    }
+    @media (max-width: 767px) {
+        margin-top: 0;
     }
     ul {
         margin: 0;
@@ -24,7 +24,7 @@
         align-items: center;
         justify-content: center;
         list-style: none;
-        color: #fff;
+        color: $color__background-body;
         height: 60px;
         font-family: 'Oswald';
         text-transform: uppercase;
@@ -38,7 +38,7 @@
             background-color: #444;
         }
         a {
-            color: #fff;
+            color: $color__background-body;
             text-decoration: none;
         }
     }
@@ -57,6 +57,7 @@
         height: auto;
         -webkit-clip-path: none;
         clip-path: none;
+        margin-top: 0;
     }
     p {
         margin: 0 auto;
@@ -76,6 +77,7 @@
     margin: -24.8rem auto 0;
     @media (max-width: 1199px) {
         position: static;
+        margin-top: 0;
     }
 
     ul {
@@ -106,8 +108,8 @@
         background-color: #444;
     }
     @media (max-width: 767px) {
-        height: auto;
-        padding: 2rem 4vw;
+        min-height: auto;
+        padding: 4rem 4vw;
     }
     span  {
         font-size: .75rem;
@@ -119,5 +121,10 @@
         margin: 0;
         line-height: 1.2;
         font-weight: 400;
+        
+        a {
+            color: $color__background-body;
+            text-decoration: none;
+        }
     }
 }
