@@ -7861,8 +7861,8 @@ body.home .slide-inner {
 @media (max-width: 767px) {
 
 	.home-featured-cat {
-		height: auto;
-		padding: 2rem 4vw;
+		min-height: auto;
+		padding: 4rem 4vw;
 	}
 }
 
