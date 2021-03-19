@@ -6784,15 +6784,6 @@ textarea {
 
 /* Navigation
 --------------------------------------------- */
-.main-navigation {
-	margin: 0.5em 0 0 0;
-	max-width: 1200px;
-	width: 100vw;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .alternative-navigation {
 	gap: 0 !important;
 }
@@ -7500,6 +7491,8 @@ body.home header.site-header {
 	grid-template-columns: 430px 294px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 70px 45px;
 	color: #fff;
+	max-width: 1236px;
+	margin: 0 auto;
 }
 
 .site-header h1,
@@ -7597,7 +7590,6 @@ body.home header.site-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: -0.6rem;
 }
 
 .site-header ul li {
@@ -7659,6 +7651,7 @@ body.home header.site-header {
 	.hero-text--desc {
 		padding: 0 1rem 0 0;
 		max-width: 100%;
+		margin-left: 1rem;
 	}
 }
 

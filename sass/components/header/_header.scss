@@ -15,6 +15,8 @@
     grid-template-columns: 430px 294px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 70px 45px;
     color: $color__norm-white;
+    max-width: 1236px;
+    margin: 0 auto;
     h1, h2 {
         padding: 0;
         margin: 0;
@@ -82,7 +84,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: -.6rem;
         li {
             font-family: 'Oswald';
             list-style: none;
@@ -122,6 +123,7 @@
         @media (max-width: 767px) {
             padding: 0 1rem 0 0;
             max-width: 100%;
+            margin-left: 1rem;
         }
     }
 }
