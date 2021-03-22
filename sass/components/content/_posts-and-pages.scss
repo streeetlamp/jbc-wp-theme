@@ -2,13 +2,18 @@
   display: block;
 }
 
-.post,
-.page,
-.single,
-.search {
-  header.site-header {
-    background-color: $color__gray-dark;
-  }
+// .post,
+// .page,
+// .single,
+// .search {
+
+// }
+
+.type-page {
+    max-width: 1236px;
+    padding: 0 1rem;
+    margin: 0 auto;
+
 }
 
 body.home {
