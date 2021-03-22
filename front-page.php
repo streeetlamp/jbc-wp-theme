@@ -36,8 +36,11 @@ get_header();
 	$the_query = new WP_Query($arg);
 	if ($the_query->have_posts()) :
 		while ($the_query->have_posts()) : $the_query->the_post();
-			$quote = get_field('quote'); ?>
-			<div class="home-quote"><?php echo ("<p style='text-align:center;'>" . $quote . "</p>"); ?></div>
+			$quote = get_field('quote'); 
+			$attribution_jbc = get_field('attribution_jbc'); ?>
+			<div class="home-quote">
+				<?php echo ("<p class='frontpage-quote'>" . $quote . "<br>". $attribution_jbc . "</p>"); ?>
+			</div>
 	<?php endwhile;
 	endif;
 	wp_reset_postdata();
