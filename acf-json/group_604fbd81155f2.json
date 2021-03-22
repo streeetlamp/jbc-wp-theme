@@ -20,6 +20,25 @@
             "maxlength": 240,
             "rows": "",
             "new_lines": ""
+        },
+        {
+            "key": "field_6058f2f8a4a8f",
+            "label": "Attribution",
+            "name": "attribution_jbc",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -38,10 +57,11 @@
     "instruction_placement": "label",
     "hide_on_screen": [
         "the_content",
+        "revisions",
         "categories",
         "tags"
     ],
     "active": true,
     "description": "",
-    "modified": 1615840500
+    "modified": 1616442173
 }
