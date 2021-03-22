@@ -17,28 +17,29 @@ get_header();
 ?>
 <main id="primary" class="site-main">
 
-		<nav id="alt-nav" class="alt-nav">
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'alt-nav',
-					'menu_id'        => 'Alternative',
-				)
-			); ?>
-		</nav><!-- #alt-navigation -->
+	<nav id="alt-nav" class="alt-nav">
 		<?php
-		$arg = array(
-			'orderby'        => 'rand',
-			'post_type'			=> 'quotes',
-			"numberposts" => 1,
-			"posts_per_page" => 1,
-		);
-		$the_query = new WP_Query($arg);
-		if ($the_query->have_posts()) :
-			while ($the_query->have_posts()) : $the_query->the_post(); ?>
-				<div class="home-quote"><?php the_content() ?></div>
+		wp_nav_menu(
+			array(
+				'theme_location' => 'alt-nav',
+				'menu_id'        => 'Alternative',
+			)
+		); ?>
+	</nav><!-- #alt-navigation -->
+	<?php
+	$arg = array(
+		'orderby'        => 'rand',
+		'post_type'			=> 'quotes',
+		"numberposts" => 1,
+		"posts_per_page" => 1,
+	);
+	$the_query = new WP_Query($arg);
+	if ($the_query->have_posts()) :
+		while ($the_query->have_posts()) : $the_query->the_post();
+			$quote = get_field('quote'); ?>
+			<div class="home-quote"><?php echo ("<p style='text-align:center;'>" . $quote . "</p>"); ?></div>
 	<?php endwhile;
-		endif;
+	endif;
 	wp_reset_postdata();
 
 	if (have_rows('home_featured_posts', 'options')) :
