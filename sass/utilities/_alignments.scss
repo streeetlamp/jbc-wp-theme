@@ -25,3 +25,12 @@
 
 	margin-bottom: 1.5em;
 }
+
+@media (max-width: 767px) {
+    .alignleft, .alignright {
+        clear: both;
+        @include center-block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

@@ -7377,10 +7377,6 @@ body.home header.site-header {
 	margin: 0.8075em 0;
 }
 
-.wp-caption-text {
-	text-align: center;
-}
-
 /* Galleries
 --------------------------------------------- */
 .gallery {
@@ -7959,4 +7955,17 @@ body.home .slide-inner {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.5em;
+}
+
+@media (max-width: 767px) {
+
+	.alignleft,
+	.alignright {
+		clear: both;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
