@@ -6958,7 +6958,8 @@ textarea {
 	display: block;
 }
 
-.type-page {
+.type-page,
+.type-post {
 	max-width: 1236px;
 	padding: 0 1rem;
 	margin: 0 auto;
