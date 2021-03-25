@@ -126,10 +126,10 @@ function jbc_content_width()
 add_action('after_setup_theme', 'jbc_content_width', 0);
 
 /**
-*
-* Removing customizer items that users should not need
-* 
-*/
+ *
+ * Removing customizer items that users should not need
+ * 
+ */
 
 function jbc_remove_sections($wp_customize)
 {
@@ -137,7 +137,7 @@ function jbc_remove_sections($wp_customize)
 	$wp_customize->remove_section('header_image');
 	// $wp_customize->remove_panel('nav_menus');
 	//$wp_customize->remove_panel('widgets');
-	$wp_customize->remove_section('custom_css');	
+	$wp_customize->remove_section('custom_css');
 	$wp_customize->remove_section('colors');
 	$wp_customize->remove_section('background_image');
 	//$wp_customize->remove_section('static_front_page');	 
@@ -281,4 +281,3 @@ if (defined('JETPACK__VERSION')) {
  *
  */
 require get_template_directory() . '/post-types/quotes-post-type.php';
-
