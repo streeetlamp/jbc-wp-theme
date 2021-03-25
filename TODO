@@ -24,4 +24,4 @@ FEATURE PUNCH DOWN LIST
 ✔ home featured taxonomy should actually just be posts @done(21-01-28 12:04)
 ☐ Cabell writes in Latin, Greek, French, English (maybe others). look into if supported correctly
 ✔ body font =? https://fonts.google.com/specimen/EB+Garamond @done(21-02-25 12:46)
-☐ correct web font paths
+✔ correct web font paths @done(21-03-25 10:37)
