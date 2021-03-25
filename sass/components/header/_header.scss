@@ -63,7 +63,7 @@
         }
         .search-submit {
             border: none;
-            background-color: #000;
+            background-color: $color__darkest;
             color: #fff;
             height: 35px;
             border-radius: 0 5px 5px 0;
@@ -100,7 +100,7 @@
         }
         li:nth-of-type(5) {
             padding: .5rem .8rem;
-            background-color: #000;
+            background-color: $color__accent;
             border-radius: 5px;
         }
     }
