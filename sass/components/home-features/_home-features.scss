@@ -29,13 +29,13 @@
         font-family: 'Oswald';
         text-transform: uppercase;
         &:first-of-type {
-            background-color: #000000;
+            background-color: $color__darkest;
         }
         &:nth-of-type(2) {
-            background-color: #222;
+            background-color: $color__darker;
         }
         &:nth-of-type(3) {
-            background-color: #444;
+            background-color: $color__dark;
         }
         a {
             color: $color__background-body;
@@ -46,7 +46,7 @@
 
 .home-quote {
     margin-top: -30px;
-    background-color: #ccc;
+    background-color: $color__background-ins;
     // height: 650px;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
@@ -99,13 +99,13 @@
     align-items: center;
     min-height: 450px;
     &:first-of-type {
-        background-color: #000000;
+        background-color: $color__darkest;
     }
     &:nth-of-type(2) {
-        background-color: #222;
+        background-color: $color__darker;
     }
     &:nth-of-type(3) {
-        background-color: #444;
+        background-color: $color__dark;
     }
     @media (max-width: 767px) {
         min-height: auto;
@@ -115,6 +115,7 @@
         font-size: .75rem;
         text-transform: uppercase;
         font-family: 'Quattrocento Sans';
+        color: $color__alt-dark;
     }
     h2 {
         padding: 0;
