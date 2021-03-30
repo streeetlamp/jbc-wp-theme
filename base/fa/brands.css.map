@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "brands.css",
+	"sources": [
+		"../../sass/base/fa/brands.scss",
+		"../../sass/base/fa/_variables.scss"
+	],
+	"names": [],
+	"mappings": "AAAA;;;GAGG;AAGH,UAAU;CACR,WAAW,EAAE,uBAAuB;CACpC,UAAU,EAAE,MAAM;CAClB,WAAW,EAAE,GAAG;CAChB,YAAY,ECLS,KAAK;CDM1B,GAAG,EAAE,iCAAyC;CAC9C,GAAG,EAAE,wCAAgD,CAAC,2BAA2B,EACjF,mCAA2C,CAAC,eAAe,EAC3D,kCAA0C,CAAC,cAAc,EACzD,iCAAyC,CAAC,kBAAkB,EAC5D,6CAAqD,CAAC,aAAa;;;AAGrE,AAAA,IAAI,CAAC;CACH,WAAW,EAAE,uBAAuB;CACpC,WAAW,EAAE,GAAG;CACjB"
+}

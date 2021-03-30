@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "regular.css",
+	"sources": [
+		"../../sass/base/fa/regular.scss",
+		"../../sass/base/fa/_variables.scss"
+	],
+	"names": [],
+	"mappings": "AAAA;;;GAGG;AAGH,UAAU;CACR,WAAW,EAAE,qBAAqB;CAClC,UAAU,EAAE,MAAM;CAClB,WAAW,EAAE,GAAG;CAChB,YAAY,ECLS,KAAK;CDM1B,GAAG,EAAE,kCAA0C;CAC/C,GAAG,EAAE,yCAAiD,CAAC,2BAA2B,EAClF,oCAA4C,CAAC,eAAe,EAC5D,mCAA2C,CAAC,cAAc,EAC1D,kCAA0C,CAAC,kBAAkB,EAC7D,8CAAsD,CAAC,aAAa;;;AAGtE,AAAA,IAAI,CAAC;CACH,WAAW,EAAE,qBAAqB;CAClC,WAAW,EAAE,GAAG;CACjB"
+}

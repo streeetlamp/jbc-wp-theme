@@ -10,7 +10,7 @@
 
 if (!defined('_S_VERSION')) {
 	// Replace the version number of the theme on each release.
-	define('_S_VERSION', '1.0.29');
+	define('_S_VERSION', '1.0.33');
 }
 
 if (!function_exists('jbc_setup')) :
@@ -126,10 +126,10 @@ function jbc_content_width()
 add_action('after_setup_theme', 'jbc_content_width', 0);
 
 /**
-*
-* Removing customizer items that users should not need
-* 
-*/
+ *
+ * Removing customizer items that users should not need
+ * 
+ */
 
 function jbc_remove_sections($wp_customize)
 {
@@ -137,7 +137,7 @@ function jbc_remove_sections($wp_customize)
 	$wp_customize->remove_section('header_image');
 	// $wp_customize->remove_panel('nav_menus');
 	//$wp_customize->remove_panel('widgets');
-	$wp_customize->remove_section('custom_css');	
+	$wp_customize->remove_section('custom_css');
 	$wp_customize->remove_section('colors');
 	$wp_customize->remove_section('background_image');
 	//$wp_customize->remove_section('static_front_page');	 
@@ -232,6 +232,27 @@ if (!function_exists('remove_wp_open_sans')) :
 	add_action('wp_enqueue_scripts', 'remove_wp_open_sans');
 endif;
 
+// breadcrumbs
+function get_breadcrumb() {
+    echo '<a href="'.home_url().'" rel="nofollow">Home</a>';
+    if (is_category() || is_single()) {
+        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
+        the_category(' &bull; ');
+            if (is_single()) {
+                echo " &nbsp;&nbsp;&#187;&nbsp;&nbsp; ";
+                the_title();
+            }
+    } elseif (is_page()) {
+        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
+        echo the_title();
+    } elseif (is_search()) {
+        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;Search Results for... ";
+        echo '"<em>';
+        echo the_search_query();
+        echo '</em>"';
+    }
+}
+
 // emoji's actually suck
 remove_action('wp_head', 'print_emoji_detection_script', 7);
 remove_action('wp_print_styles', 'print_emoji_styles');
@@ -281,4 +302,3 @@ if (defined('JETPACK__VERSION')) {
  *
  */
 require get_template_directory() . '/post-types/quotes-post-type.php';
-
