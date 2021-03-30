@@ -6974,6 +6974,12 @@ textarea {
 	margin: 0 auto;
 }
 
+.breadcrumb {
+	max-width: 1236px;
+	margin: 0 auto;
+	padding: 1rem 1rem 0;
+}
+
 body.home header.site-header {
 	background-color: transparent;
 }
