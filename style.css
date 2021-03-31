@@ -413,7 +413,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #380036;
+	color: #282828;
 	font-family: "EB Garamond", serif;
 	font-size: 18px;
 	line-height: 1.5;
@@ -6679,7 +6679,7 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #255f85;
+	color: #2a4872;
 }
 
 a:visited {
@@ -6689,7 +6689,7 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-	color: #59a1d1;
+	color: #2f305e;
 }
 
 a:focus {
@@ -6931,7 +6931,7 @@ textarea {
 }
 
 .alternative-navigation ul li:last-of-type a {
-	background-color: #858585;
+	background-color: #ccc;
 }
 
 .site-main .comment-navigation,
@@ -6974,10 +6974,12 @@ textarea {
 	margin: 0 auto;
 }
 
-.breadcrumb {
-	max-width: 1236px;
+.breadcrumb,
+.page-title {
+	max-width: 1202px;
 	margin: 0 auto;
-	padding: 1rem 1rem 0;
+	padding: 1rem 0;
+	border-bottom: 1px solid #ccc;
 }
 
 body.home header.site-header {
@@ -7446,7 +7448,7 @@ body.home header.site-header {
 /* Footer
 --------------------------------------------- */
 .site-footer {
-	background-color: #2f305e;
+	background-color: #380036;
 	color: #f9f9f9;
 	width: 100%;
 }
@@ -7481,7 +7483,7 @@ body.home header.site-header {
 /* Header
 --------------------------------------------- */
 .hero {
-	background-color: #282828;
+	background-color: #380036;
 	background-size: cover;
 	background-position: center;
 	color: #fff;
@@ -7566,7 +7568,7 @@ body.home header.site-header {
 
 .site-header .search-form .search-submit {
 	border: none;
-	background-color: #380036;
+	background-color: #000;
 	color: #fff;
 	height: 35px;
 	border-radius: 0 5px 5px 0;

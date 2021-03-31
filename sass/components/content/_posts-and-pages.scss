@@ -16,10 +16,11 @@
 
 }
 
-.breadcrumb {
-    max-width: 1236px;
+.breadcrumb, .page-title {
+    max-width: 1202px;
     margin: 0 auto;
-    padding: 1rem 1rem 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid $color__gray-lite;
 }
 
 body.home {
