@@ -16,6 +16,13 @@
 
 }
 
+.breadcrumb, .page-title {
+    max-width: 1202px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    border-bottom: 1px solid $color__gray-lite;
+}
+
 body.home {
   header.site-header {
     background-color: transparent;

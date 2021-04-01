@@ -1,5 +1,5 @@
 .hero {
-    background-color: #282828;
+    background-color: $color__darkest;
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -63,7 +63,7 @@
         }
         .search-submit {
             border: none;
-            background-color: $color__darkest;
+            background-color: $color__super-black;
             color: #fff;
             height: 35px;
             border-radius: 0 5px 5px 0;

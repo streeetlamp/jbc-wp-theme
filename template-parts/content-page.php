@@ -10,6 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <div class="breadcrumb"><?php get_breadcrumb(); ?></div>
 
 	<?php if ( ! is_front_page() ) : ?>
 		<header class="entry-header">
