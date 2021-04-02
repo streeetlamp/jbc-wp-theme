@@ -6658,17 +6658,15 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #2a4872;
+	color: #2A4872;
 }
 
 a:visited {
 	color: #255F85;
 }
 
-a:hover,
-a:focus,
-a:active {
-	color: #2f305e;
+a:hover, a:focus, a:active {
+	color: #2F305E;
 }
 
 a:focus {
@@ -6904,7 +6902,7 @@ textarea {
 }
 
 .alternative-navigation ul li:last-of-type a {
-	background-color: #ccc;
+	background-color: #CCC;
 }
 
 .site-main .comment-navigation, .site-main
@@ -6944,12 +6942,11 @@ textarea {
 	margin: 0 auto;
 }
 
-.breadcrumb,
-.page-title {
+.breadcrumb, .page-title {
 	max-width: 1202px;
 	margin: 0 auto;
 	padding: 1rem 0;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #CCC;
 }
 
 body.home header.site-header {
@@ -7318,6 +7315,17 @@ body.home header.site-header {
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link {
 	display: inline-block;
+}
+
+.attachment p.attachment {
+	display: block;
+	text-align: center;
+}
+
+.type-attachment {
+	max-width: 1236px;
+	padding: 0 1rem;
+	margin: 0 auto;
 }
 
 /* Captions
