@@ -11,6 +11,7 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+		<div class="breadcrumb"><?php get_breadcrumb(); ?></div>
 
 		<?php
 		while ( have_posts() ) :
