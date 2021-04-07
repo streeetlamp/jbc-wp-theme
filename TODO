@@ -1,6 +1,6 @@
 FEATURE PUNCH DOWN LIST
 ✔ Search @done(21-02-25 12:47)
-☐ Fix search input field
+✔ Fix search input field @done(21-04-07 15:08)
 ✔ Search results page has transparent header @done(21-02-12 11:43)
 ✔ home featured pages/posts @done(21-01-28 12:07)
 ✔ Implement Todd style and markup edits @done(21-03-25 10:21)
@@ -15,8 +15,8 @@ FEATURE PUNCH DOWN LIST
 ✔ Main and Alternative Navigation @done(21-01-07 14:04)
 ☐ Style Main and Alternative Navigation 
 ✔ Footer Nav @done(21-01-07 14:04)
-☐ Style Footer Nav
-✔ Install ACF @done(20-12-11 16:13)
+✔ Style Footer Nav @done(21-04-07 15:08)
+✔ Install ACF @done(21-04-07 15:08)
 ✔ drop in ACF flex loop @done(21-01-06 13:22)
 ☐ create JBC site logo and favicon
 ✔ add Oswald type @done(21-01-12 13:12)
