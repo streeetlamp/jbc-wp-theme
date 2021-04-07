@@ -7424,11 +7424,23 @@ body.home header.site-header {
 	width: 100%;
 	text-align: center;
 	margin: 0 auto 0 auto;
-	max-width: 35%;
+	max-width: 100%;
+}
+
+.jetpack_subscription_widget .subscribe-text {
+	margin: 15px 0 10px;
 }
 
 .jetpack_subscription_widget .widgettitle {
 	display: none;
+}
+
+#subscribe-email input {
+	width: 60%;
+}
+
+#subscribe-submit {
+	margin-top: 10px;
 }
 
 /* Header
