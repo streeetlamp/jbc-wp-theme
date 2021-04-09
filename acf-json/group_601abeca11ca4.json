@@ -63,6 +63,21 @@
             "maxlength": 320,
             "rows": 4,
             "new_lines": ""
+        },
+        {
+            "key": "field_6070ae8e5de0a",
+            "label": "Link",
+            "name": "link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url"
         }
     ],
     "location": [
@@ -86,5 +101,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1615838784
+    "modified": 1617997469
 }

@@ -69,10 +69,15 @@
             <?php
             if (is_front_page()) :
                 $excerpt = get_field('excerpt');
-                $headline = get_field('headline'); ?>
+                $headline = get_field('headline');
+                $link = get_field('link');
+                $title = "Get Started"; ?>
                 <div class="hero-text">
                     <h2 class="hero-text--heading"><?php echo $headline; ?></h2>
                     <p class="hero-text--desc"><?php echo $excerpt; ?></p>
+                    <?php
+                    echo ("<h3 class='hero-text--link'><a href='" . $link . "'>" . $title . "</a></h3>");
+                    ?>
                 </div>
             <?php
             endif; ?>
