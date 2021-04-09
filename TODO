@@ -26,7 +26,7 @@ FEATURE PUNCH DOWN LIST
 ☐ Cabell writes in Latin, Greek, French, English (maybe others). look into if supported correctly
 ✔ body font =? https://fonts.google.com/specimen/EB+Garamond @done(21-02-25 12:46)
 ✔ correct web font paths @done(21-03-25 10:37)
-☐ fix breadcrumbs
+✔ fix breadcrumbs @done(21-04-09 12:45)
 ☐ feedback banner / form 
 ☐ Share to staff on 4/14
 ☐ Lightbox??
