@@ -76,8 +76,8 @@
                     <h2 class="hero-text--heading"><?php echo $headline; ?></h2>
                     <p class="hero-text--desc"><?php echo $excerpt; ?></p>
                     <?php
-                    echo ("<h3 class='hero-text--link'><a href='" . $link . "'>" . $title . "</a></h3>");
-                    ?>
+                    if( $link ) : echo ("<h3 class='hero-text--link'><a href='" . $link . "'>" . $title . "</a></h3>");
+                    endif; ?>
                 </div>
             <?php
             endif; ?>
