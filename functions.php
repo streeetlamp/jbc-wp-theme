@@ -205,8 +205,6 @@ function jbc_scripts() {
 
 	wp_enqueue_script( 'jbc-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
-	wp_enqueue_script( 'jbc-mustache', 'https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.0/mustache.js', array(), _S_VERSION, true );
-
 	wp_enqueue_script( 'jbc-feedback', get_template_directory_uri() . '/js/feedback.js', array(), _S_VERSION, true );
 
 	// if (is_singular() && comments_open() && get_option('thread_comments')) {
