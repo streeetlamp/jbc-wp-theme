@@ -8,12 +8,12 @@
  * @package James_Branch_Cabell
  */
 
-if (!defined('_S_VERSION')) {
+if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define('_S_VERSION', '1.0.39');
+	define( '_S_VERSION', '1.0.39' );
 }
 
-if (!function_exists('jbc_setup')) :
+if ( ! function_exists( 'jbc_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -21,18 +21,17 @@ if (!function_exists('jbc_setup')) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function jbc_setup()
-	{
+	function jbc_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on James Branch Cabell, use a find and replace
-		 * to change 'jbc' to the name of your theme in all the template files.
+		 * to change 'jbc-wp-theme' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain('jbc', get_template_directory() . '/languages');
+		load_theme_textdomain( 'jbc-wp-theme', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
-		add_theme_support('automatic-feed-links');
+		add_theme_support( 'automatic-feed-links' );
 
 		/*
 		 * Let WordPress manage the document title.
@@ -40,35 +39,35 @@ if (!function_exists('jbc_setup')) :
 		 * hard-coded <title> tag in the document head, and expect WordPress to
 		 * provide it for us.
 		 */
-		add_theme_support('title-tag');
+		add_theme_support( 'title-tag' );
 
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
-		add_theme_support('post-thumbnails');
+		add_theme_support( 'post-thumbnails' );
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__('Primary', 'jbc'),
-				'alt-nav' => esc_html('Alternative', 'jbc'),
-				'footer' => esc_html('Footer', 'jbc'),
+				'menu-1'  => esc_html__( 'Primary', 'jbc-wp-theme' ),
+				'alt-nav' => esc_html( 'Alternative', 'jbc-wp-theme' ),
+				'footer'  => esc_html( 'Footer', 'jbc-wp-theme' ),
 			)
 		);
 
 		/*
-* ACF options page
-*/
-		if (function_exists('acf_add_options_page')) {
+		* ACF options page
+		*/
+		if ( function_exists( 'acf_add_options_page' ) ) {
 			acf_add_options_page(
 				array(
 					'page_title' => 'Site Options',
 					'menu_title' => 'Site Options',
-					'menu_slug' => 'options',
+					'menu_slug'  => 'options',
 					'capability' => 'edit_posts',
-					'redirect' => false,
+					'redirect'   => false,
 				)
 			);
 		}
@@ -110,7 +109,7 @@ if (!function_exists('jbc_setup')) :
 		);
 	}
 endif;
-add_action('after_setup_theme', 'jbc_setup');
+add_action( 'after_setup_theme', 'jbc_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -119,69 +118,61 @@ add_action('after_setup_theme', 'jbc_setup');
  *
  * @global int $content_width
  */
-function jbc_content_width()
-{
-	$GLOBALS['content_width'] = apply_filters('jbc_content_width', 1200);
+function jbc_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'jbc_content_width', 1200 );
 }
-add_action('after_setup_theme', 'jbc_content_width', 0);
+add_action( 'after_setup_theme', 'jbc_content_width', 0 );
 
 /**
  *
  * Removing customizer items that users should not need
- * 
  */
 
-function jbc_remove_sections($wp_customize)
-{
+function jbc_remove_sections( $wp_customize ) {
 
-	$wp_customize->remove_section('header_image');
+	$wp_customize->remove_section( 'header_image' );
 	// $wp_customize->remove_panel('nav_menus');
-	//$wp_customize->remove_panel('widgets');
-	$wp_customize->remove_section('custom_css');
-	$wp_customize->remove_section('colors');
-	$wp_customize->remove_section('background_image');
-	//$wp_customize->remove_section('static_front_page');	 
-	//$wp_customize->remove_section('title_tagline');	
+	// $wp_customize->remove_panel('widgets');
+	$wp_customize->remove_section( 'custom_css' );
+	$wp_customize->remove_section( 'colors' );
+	$wp_customize->remove_section( 'background_image' );
+	// $wp_customize->remove_section('static_front_page');    
+	// $wp_customize->remove_section('title_tagline');   
 }
-add_action('customize_register', 'jbc_remove_sections');
+add_action( 'customize_register', 'jbc_remove_sections' );
 
-add_action('admin_menu', 'jbc_remove_admin_menus');
-function jbc_remove_admin_menus()
-{
-	remove_menu_page('edit-comments.php');
+add_action( 'admin_menu', 'jbc_remove_admin_menus' );
+function jbc_remove_admin_menus() {
+	 remove_menu_page( 'edit-comments.php' );
 }
 // Removes from post and pages
-add_action('init', 'remove_comment_support', 100);
+add_action( 'init', 'remove_comment_support', 100 );
 
-function remove_comment_support()
-{
-	remove_post_type_support('post', 'comments');
-	remove_post_type_support('page', 'comments');
+function remove_comment_support() {
+	 remove_post_type_support( 'post', 'comments' );
+	remove_post_type_support( 'page', 'comments' );
 }
 // Removes from admin bar
-function jbctheme_admin_bar_render()
-{
+function jbctheme_admin_bar_render() {
 	global $wp_admin_bar;
-	$wp_admin_bar->remove_menu('comments');
+	$wp_admin_bar->remove_menu( 'comments' );
 }
-add_action('wp_before_admin_bar_render', 'jbctheme_admin_bar_render');
+add_action( 'wp_before_admin_bar_render', 'jbctheme_admin_bar_render' );
 
 // useful tool to check if live or local
-function we_are_live()
-{
-	$current_server = $_SERVER['HTTP_HOST'];
-
-	if ($current_server == 'jbcdev.wpengine.com') {
-		return true;
-	} else {
-		return false;
-	}
-}
+// function we_are_live() {
+// $current_server = wp_unslash( $_SERVER['HTTP_HOST'] );
+// if ( $current_server == 'jbcdev.wpengine.com' ) {
+// return true;
+// } else {
+// return false;
+// }
+// }
 
 
 // Hide ACF from admin menu if live
 // if (we_are_live()) {
-// 	add_filter('acf/settings/show_admin', '__return_false');
+// add_filter('acf/settings/show_admin', '__return_false');
 // }
 
 
@@ -191,72 +182,68 @@ function we_are_live()
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 // function jbc_widgets_init() {
-// 	register_sidebar(
-// 		array(
-// 			'name'          => esc_html__( 'Sidebar', 'jbc' ),
-// 			'id'            => 'sidebar-1',
-// 			'description'   => esc_html__( 'Add widgets here.', 'jbc' ),
-// 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-// 			'after_widget'  => '</section>',
-// 			'before_title'  => '<h2 class="widget-title">',
-// 			'after_title'   => '</h2>',
-// 		)
-// 	);
+// register_sidebar(
+// array(
+// 'name'          => esc_html__( 'Sidebar', 'jbc' ),
+// 'id'            => 'sidebar-1',
+// 'description'   => esc_html__( 'Add widgets here.', 'jbc' ),
+// 'before_widget' => '<section id="%1$s" class="widget %2$s">',
+// 'after_widget'  => '</section>',
+// 'before_title'  => '<h2 class="widget-title">',
+// 'after_title'   => '</h2>',
+// )
+// );
 // }
 // add_action( 'widgets_init', 'jbc_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function jbc_scripts()
-{
-	wp_enqueue_style('jbc-style', get_stylesheet_uri(), array(), _S_VERSION);
-	wp_style_add_data('jbc-style', 'rtl', 'replace');
+function jbc_scripts() {
+	wp_enqueue_style( 'jbc-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_style_add_data( 'jbc-style', 'rtl', 'replace' );
 
-	wp_enqueue_script('jbc-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
+	wp_enqueue_script( 'jbc-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	// if (is_singular() && comments_open() && get_option('thread_comments')) {
-	// 	wp_enqueue_script('comment-reply');
+	// wp_enqueue_script('comment-reply');
 	// }
 }
-add_action('wp_enqueue_scripts', 'jbc_scripts');
+add_action( 'wp_enqueue_scripts', 'jbc_scripts' );
 
 
 // Remove Open Sans that WP adds from frontend
-if (!function_exists('remove_wp_open_sans')) :
-	function remove_wp_open_sans()
-	{
-		wp_deregister_style('open-sans');
-		wp_register_style('open-sans', false);
+if ( ! function_exists( 'remove_wp_open_sans' ) ) :
+	function remove_wp_open_sans() {
+		wp_deregister_style( 'open-sans' );
+		wp_register_style( 'open-sans', false );
 	}
-	add_action('wp_enqueue_scripts', 'remove_wp_open_sans');
+	add_action( 'wp_enqueue_scripts', 'remove_wp_open_sans' );
 endif;
 
 // emoji's actually suck
-remove_action('wp_head', 'print_emoji_detection_script', 7);
-remove_action('wp_print_styles', 'print_emoji_styles');
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
 // Fully Disable Gutenberg editor.
-add_filter('use_block_editor_for_post_type', '__return_false', 10);
+add_filter( 'use_block_editor_for_post_type', '__return_false', 10 );
 // Don't load Gutenberg-related stylesheets.
-add_action('wp_enqueue_scripts', 'remove_block_css', 100);
-function remove_block_css()
-{
-	wp_dequeue_style('wp-block-library'); // WordPress core
-	wp_dequeue_style('wp-block-library-theme'); // WordPress core
-	wp_dequeue_style('wc-block-style'); // WooCommerce
-	wp_dequeue_style('storefront-gutenberg-blocks'); // Storefront theme
+add_action( 'wp_enqueue_scripts', 'remove_block_css', 100 );
+function remove_block_css() {
+	wp_dequeue_style( 'wp-block-library' ); // WordPress core
+	wp_dequeue_style( 'wp-block-library-theme' ); // WordPress core
+	wp_dequeue_style( 'wc-block-style' ); // WooCommerce
+	wp_dequeue_style( 'storefront-gutenberg-blocks' ); // Storefront theme
 }
 
 /*
 * Customize menu thing is annoying
 */
-add_action('wp_before_admin_bar_render', 'jbc_before_admin_bar_render');
+add_action( 'wp_before_admin_bar_render', 'jbc_before_admin_bar_render' );
 
-function jbc_before_admin_bar_render()
-{
+function jbc_before_admin_bar_render() {
 	global $wp_admin_bar;
-	$wp_admin_bar->remove_menu('customize');
+	$wp_admin_bar->remove_menu( 'customize' );
 }
 
 /**
@@ -272,12 +259,11 @@ require get_template_directory() . '/inc/template-functions.php';
 /**
  * Load Jetpack compatibility file.
  */
-if (defined('JETPACK__VERSION')) {
+if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
 /**
  * USE THIS TEMPLATE TO CREATE CUSTOM POST TYPES EASILY
- *
  */
 require get_template_directory() . '/post-types/quotes-post-type.php';
