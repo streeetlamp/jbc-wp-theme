@@ -7825,6 +7825,22 @@ body.home .slide-inner {
 	text-decoration: none;
 }
 
+/* Feedback Banner
+--------------------------------------------- */
+.banner {
+	text-align: center;
+	padding: .4em;
+	background-color: #111;
+	color: #f9f9f9;
+	font-family: "Oswald", sans-serif;
+	margin: 0;
+	font-size: 1em;
+}
+
+.banner strong {
+	margin-left: .45em;
+}
+
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
