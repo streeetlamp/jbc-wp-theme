@@ -32,5 +32,5 @@ FEATURE PUNCH DOWN LIST
 ☐ Share to staff on 4/14
 ☐ Lightbox??
 ☐ cleanup php/js (phpcs, phpcbf)
-☐ fix up not found page layout
-☐ prevent media upload breaking
+✔ fix up not found page layout @done(21-04-13 15:21)
+✔ prevent media upload breaking @done(21-04-13 15:21)
