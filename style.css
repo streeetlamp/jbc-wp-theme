@@ -7829,9 +7829,9 @@ body.home .slide-inner {
 --------------------------------------------- */
 .banner {
 	text-align: center;
-	padding: .4em;
-	background-color: #111;
-	color: #f9f9f9;
+	padding: .35em;
+	background-color: #f8f4e3;
+	color: #282828;
 	font-family: "Oswald", sans-serif;
 	margin: 0;
 	font-size: 1em;
