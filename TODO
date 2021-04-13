@@ -18,7 +18,7 @@ FEATURE PUNCH DOWN LIST
 ✔ Style Footer Nav @done(21-04-07 15:08)
 ✔ Install ACF @done(21-04-07 15:08)
 ✔ drop in ACF flex loop @done(21-01-06 13:22)
-✔ create JBC site logo and favicon @done(21-04-13 12:46)
+☐ create JBC site logo and favicon
 ✔ add Oswald type @done(21-01-12 13:12)
 ☐ bibliography post type?
 ✔ home rotating quotes post type @done(21-01-14 16:06)
@@ -28,9 +28,8 @@ FEATURE PUNCH DOWN LIST
 ✔ correct web font paths @done(21-03-25 10:37)
 ✔ fix breadcrumbs @done(21-04-09 12:45)
 ✔ add link to home getting started block @done(21-04-09 16:20)
-✔ feedback banner / form @done(21-04-13 12:46)
+☐ feedback banner / form 
 ☐ Share to staff on 4/14
 ☐ Lightbox??
 ☐ cleanup php/js (phpcs, phpcbf)
 ☐ fix up not found page layout
-☐ prevent media upload breaking
