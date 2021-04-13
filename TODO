@@ -33,3 +33,4 @@ FEATURE PUNCH DOWN LIST
 ☐ Lightbox??
 ☐ cleanup php/js (phpcs, phpcbf)
 ☐ fix up not found page layout
+☐ prevent media upload breaking
