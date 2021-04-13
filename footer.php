@@ -33,7 +33,7 @@
 			?>
 			<p class="last-modified"><small>Last modified: <?php the_modified_time( 'F j, Y' ); ?></small></p>
 		<?php else : ?>
-			<p class="last-modified"><small>Last modified: <?php esc_html( date( 'F j, Y' ) ); ?></small></p>
+			<p class="last-modified"><small>Last modified: <?php echo esc_html( date( 'F j, Y' ) ); ?></small></p>
 		<?php endif; ?>
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->
