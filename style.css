@@ -1,17 +1,17 @@
 @charset "UTF-8";
 
-/*!
+/*
 Theme Name: James Branch Cabell
-Theme URI: http://underscores.me/
+Theme URI: https://scm.vcu.edu/projects/LIBS/repos/jbc-wp-theme/
 Author: Digital Engagement
 Author URI: https://www.library.vcu.edu/
 Description: The JBC website will create a hub for information and publishing related to James Branch Cabell, stimulating new interest and scholarship while presenting the author’s works, biography, philosophical concerns, and legacy to specialists and the general reading public. The project seeks to convey a sense of Cabell’s playful wit as an enticement for new audiences to explore these resources. In addition, the project will highlight Cabell as an influence and inspiration at Virginia Commonwealth University.
 Version: 1.0.0
 Tested up to: 5.4
-Requires PHP: 5.6
+Requires PHP: 7.1
 License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: jbc
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: jbc-wp-theme
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.

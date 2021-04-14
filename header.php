@@ -25,8 +25,8 @@
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'jbc-wp-theme' ); ?></a>
-		<section class="hero" 
-		<?php 
+		<section class="hero"
+		<?php
 		if ( is_front_page() ) :
 			$image = get_field( 'image' );
 			$image = $image['sizes']['large'];
@@ -48,11 +48,11 @@
 				if ( $jbc_description || is_customize_preview() ) :
 					?>
 					<h2 class="site-description">
-						<?php 
-						echo $jbc_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+						<?php
+						echo $jbc_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 						?>
 					</h2>
-					<?php 
+					<?php
 				endif;
 				get_search_form();
 				?>
@@ -64,7 +64,7 @@
 							'theme_location' => 'menu-1',
 							'menu_id'        => 'primary-menu',
 						)
-					); 
+					);
 					?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
@@ -73,7 +73,7 @@
 				$excerpt    = get_field( 'excerpt' );
 				$headline   = get_field( 'headline' );
 				$hero_link  = get_field( 'link' );
-				$hero_title = 'Get Started'; 
+				$hero_title = 'Get Started';
 				?>
 				<div class="hero-text">
 					<h2 class="hero-text--heading"><?php echo esc_html( $headline ); ?></h2>
@@ -81,10 +81,10 @@
 					<?php
 					if ( $hero_link ) :
 						echo ( "<h3 class='hero-text--link'><a href='" . esc_url( $hero_link ) . "'>" . esc_html( $hero_title ) . '</a></h3>' );
-					endif; 
+					endif;
 					?>
 				</div>
 				<?php
-			endif; 
+			endif;
 			?>
 		</section>
