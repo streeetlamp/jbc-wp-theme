@@ -89,7 +89,6 @@ if ( ! function_exists( 'jbc_setup' ) ) :
 			)
 		);
 
-
 		// Add theme support for selective refresh for widgets.
 		// add_theme_support( 'customize-selective-refresh-widgets' );
 
@@ -136,8 +135,8 @@ function jbc_remove_sections( $wp_customize ) {
 	$wp_customize->remove_section( 'custom_css' );
 	$wp_customize->remove_section( 'colors' );
 	$wp_customize->remove_section( 'background_image' );
-	// $wp_customize->remove_section('static_front_page');    
-	// $wp_customize->remove_section('title_tagline');   
+	// $wp_customize->remove_section('static_front_page');
+	// $wp_customize->remove_section('title_tagline');
 }
 add_action( 'customize_register', 'jbc_remove_sections' );
 

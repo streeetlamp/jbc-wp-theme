@@ -24,7 +24,7 @@ get_header();
 				'theme_location' => 'alt-nav',
 				'menu_id'        => 'Alternative',
 			)
-		); 
+		);
 		?>
 	</nav><!-- #alt-navigation -->
 	<?php
@@ -38,13 +38,13 @@ get_header();
 	if ( $the_query->have_posts() ) :
 		while ( $the_query->have_posts() ) :
 			$the_query->the_post();
-			$quote           = get_field( 'quote' ); 
-			$attribution_jbc = get_field( 'attribution_jbc' ); 
+			$quote           = get_field( 'quote' );
+			$attribution_jbc = get_field( 'attribution_jbc' );
 			?>
 			<div class="home-quote">
 				<?php echo ( "<p class='frontpage-quote'>" . esc_html( $quote ) . '<br>' . esc_html( $attribution_jbc ) . '</p>' ); ?>
 			</div>
-			<?php 
+			<?php
 	endwhile;
 	endif;
 	wp_reset_postdata();

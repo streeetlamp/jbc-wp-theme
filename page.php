@@ -12,10 +12,10 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
-	<?php 
+	<?php
 	if ( function_exists( 'yoast_breadcrumb' ) ) {
 		yoast_breadcrumb( '<div class="breadcrumb">', '</div>' );
-	} 
+	}
 	?>
 
 	<?php

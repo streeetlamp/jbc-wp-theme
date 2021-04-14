@@ -64,7 +64,7 @@ if ( ! function_exists( 'jbc_entry_footer' ) ) :
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
 				printf( '<span class="cat-links"><small>' . esc_html__( 'in %1$s', 'jbc-wp-theme' ) . '</small></span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			}       
+			}
 		}
 
 	}

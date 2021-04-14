@@ -24,7 +24,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jbc' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jbc-wp-theme' ),
 				'after'  => '</div>',
 			)
 		);

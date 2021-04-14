@@ -3,12 +3,14 @@
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
-Requires at least: 4.5
+License: GPL-2.0+
+License URI: https://www.gnu.org/licenses/license-list.html#GPLv2
+
+Requires at least: 5.4
 Tested up to: 5.4
-Requires PHP: 5.6
+Requires PHP: 5.7
 Stable tag: 1.0.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
+
 
 A starter theme called James Branch Cabell.
 
