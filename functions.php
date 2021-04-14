@@ -143,13 +143,13 @@ add_action( 'customize_register', 'jbc_remove_sections' );
 
 add_action( 'admin_menu', 'jbc_remove_admin_menus' );
 function jbc_remove_admin_menus() {
-	 remove_menu_page( 'edit-comments.php' );
+	remove_menu_page( 'edit-comments.php' );
 }
 // Removes from post and pages
 add_action( 'init', 'remove_comment_support', 100 );
 
 function remove_comment_support() {
-	 remove_post_type_support( 'post', 'comments' );
+	remove_post_type_support( 'post', 'comments' );
 	remove_post_type_support( 'page', 'comments' );
 }
 // Removes from admin bar

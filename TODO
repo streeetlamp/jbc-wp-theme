@@ -31,6 +31,6 @@ FEATURE PUNCH DOWN LIST
 ✔ feedback banner / form @done(21-04-13 12:46)
 ☐ Share to staff on 4/14
 ☐ Lightbox??
-☐ cleanup php/js (phpcs, phpcbf)
+☐ cleanup php/js (phpcs, phpcbf, theme inspector)
 ✔ fix up not found page layout @done(21-04-13 15:21)
 ✔ prevent media upload breaking @done(21-04-13 15:21)
