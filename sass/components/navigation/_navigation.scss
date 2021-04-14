@@ -176,3 +176,19 @@
     flex: 1 0 50%;
   }
 }
+
+.sub-menu {
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: $color__darkest;
+    padding-top: 2rem;
+    
+    a {
+        padding: 0 .8rem 1.5rem;
+        border-bottom: 1px solid darken($color__darkest, 8%);
+        &:hover {
+            color: $color__alt-dark;
+        }
+    }
+}
