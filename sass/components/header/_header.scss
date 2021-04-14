@@ -13,7 +13,7 @@
 .site-header {
     padding: .5rem 1rem;
     display: grid;
-    grid-template-columns: 430px 294px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 430px 294px 1fr 1fr auto;
     grid-template-rows: 70px 45px;
     color: $color__norm-white;
     max-width: 1236px;
@@ -46,7 +46,7 @@
         }
     }
     .search-form {
-        grid-column: 3 / span 9;
+        grid-column: 5 / span 1;
         justify-self: end;
         margin-block-end: 0;
         align-self: center;
@@ -70,10 +70,17 @@
             padding: 1px 8px;
         }
     }
-    nav {
+    .main-navigation {
         grid-column: 1 / span 3;
         grid-row: 2 / span 1;
         align-self: center;
+        @media (max-width: 1099px) {
+            grid-column: 5 / span 1;
+            grid-row: 1 / span 1;
+            align-self: end;
+        }
+    }
+    .menu-top-nav-container {
         @media (max-width: 1099px) {
             display: none;
         }

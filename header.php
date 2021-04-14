@@ -67,13 +67,6 @@
 					); 
 					?>
 				</nav><!-- #site-navigation -->
-				<ul class="social">
-					<li><span class="fab fa-facebook-square"></span></li>
-					<li><span class="fab fa-twitter"></span></li>
-					<li><span class="fab fa-instagram"></span></li>
-					<li><span class="fas fa-envelope-open-text"></span></li>
-					<li><span class="fas fa-donate"></span> Donate</li>
-				</ul>
 			</header><!-- #masthead -->
 			<?php
 			if ( is_front_page() ) :
