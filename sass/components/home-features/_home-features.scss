@@ -40,6 +40,9 @@
         a {
             color: $color__background-body;
             text-decoration: none;
+            &:hover {
+                color: $color__alt-dark;
+            }
         }
     }
 }
@@ -112,13 +115,13 @@
         padding: 4rem 4vw;
     }
     span  {
-        font-size: .75rem;
+        font-size: .9rem;
         text-transform: uppercase;
         font-family: 'Quattrocento Sans';
         color: $color__alt-dark;
     }
     h2 {
-        padding: 0;
+        padding: 0 0 1rem;
         margin: 0;
         line-height: 1.2;
         font-weight: 400;
