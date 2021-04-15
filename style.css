@@ -7553,7 +7553,6 @@ body.home header.site-header {
 	padding: 0.5rem 1rem;
 	display: grid;
 	grid-template-columns: 430px 294px 1fr 1fr auto;
-	grid-template-rows: 70px 45px;
 	color: #fff;
 	max-width: 1236px;
 	margin: 0 auto;
@@ -7643,8 +7642,8 @@ body.home header.site-header {
 @media (max-width: 1099px) {
 
 	.site-header .main-navigation {
-		grid-column: 5 / span 1;
-		grid-row: 1 / span 1;
+		grid-column: 1 / span 5;
+		grid-row: 2 / span 1;
 		align-self: end;
 	}
 }
@@ -7731,6 +7730,10 @@ body.home header.site-header {
 
 header.entry-header .entry-title {
 	margin-bottom: 0;
+}
+
+.toggled .menu-top-nav-container {
+	display: block;
 }
 
 /* Slider
