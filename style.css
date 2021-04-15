@@ -462,8 +462,8 @@ i {
 
 blockquote {
 	margin: 0 auto 2rem;
-	max-width: 100ch;
-	padding: 2rem;
+	max-width: 70ch;
+	padding: 2rem 2rem 1px;
 	border-left: 0.5rem solid #ffc95c;
 	background-color: #fff3dc;
 	font-style: italic;
@@ -472,15 +472,6 @@ blockquote {
 
 blockquote p {
 	max-width: 100%;
-}
-
-blockquote::before {
-	color: #2a4872;
-	content: open-quote;
-	font-size: 4em;
-	line-height: 0.1em;
-	margin-right: 0.25em;
-	vertical-align: -0.4em;
 }
 
 address {
@@ -7007,11 +6998,12 @@ textarea {
 .type-post p {
 	font-size: 1.5rem;
 	line-height: 1.65;
+	margin-bottom: 2rem;
 }
 
 .breadcrumb,
 .page-title {
-	max-width: 1202px;
+	max-width: 1204px;
 	margin: 0 auto;
 	padding: 1rem 0;
 	border-bottom: 1px solid #ccc;
@@ -7911,9 +7903,8 @@ body.home .slide-inner {
 
 .home-featured-cat {
 	color: #fff;
-	padding: 0 4vw;
+	padding: 10rem 4vw 0;
 	display: flex;
-	align-items: center;
 	min-height: 450px;
 }
 
@@ -8071,10 +8062,9 @@ body.home .slide-inner {
 	.alignleft,
 	.alignright {
 		clear: both;
+		float: none;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		margin-left: 0;
-		margin-right: 0;
 	}
 }

@@ -16,8 +16,8 @@ i {
 
 blockquote {
 	margin: 0 auto 2rem;
-    max-width: 100ch;
-    padding: 2rem;
+    max-width: 70ch;
+    padding: 2rem 2rem 1px;
     border-left: .5rem solid $color__alt-dark;
     background-color: lighten($color__alt-dark, 25%);
     font-style: italic;
@@ -26,14 +26,14 @@ blockquote {
         max-width: 100%;
     }
 }
-blockquote:before {
-    color: $color__dark;
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
-}
+// blockquote:before {
+//     color: $color__dark;
+//     content: open-quote;
+//     font-size: 4em;
+//     line-height: 0.1em;
+//     margin-right: 0.25em;
+//     vertical-align: -0.4em;
+// }
 
 address {
 	margin: 0 0 1.5em;

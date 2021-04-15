@@ -97,9 +97,9 @@
 }
 .home-featured-cat {
     color: $color__norm-white;
-    padding: 0 4vw;
+    padding: 10rem 4vw 0;
     display: flex;
-    align-items: center;
+    // align-items: center;
     min-height: 450px;
     &:first-of-type {
         background-color: $color__darkest;

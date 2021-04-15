@@ -9,7 +9,7 @@
 
 // }
 
-.type-page, .type-post {
+.type-page, .type-post  {
     max-width: 1236px;
     padding: 0 1rem;
     margin: 0 auto;
@@ -17,12 +17,13 @@
     p {
         font-size: 1.5rem;
         line-height: 1.65;
+        margin-bottom: 2rem;
     }
 
 }
 
 .breadcrumb, .page-title {
-    max-width: 1202px;
+    max-width: 1204px;
     margin: 0 auto;
     padding: 1rem 0;
     border-bottom: 1px solid $color__gray-lite;

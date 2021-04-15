@@ -29,8 +29,9 @@
 @media (max-width: 767px) {
     .alignleft, .alignright {
         clear: both;
+        float: none;
         @include center-block;
-        margin-left: 0;
-        margin-right: 0;
+        // margin-left: 0;
+        // margin-right: 0;
     }
 }
