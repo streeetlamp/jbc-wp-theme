@@ -14,7 +14,7 @@
     padding: .5rem 1rem;
     display: grid;
     grid-template-columns: 430px 294px 1fr 1fr auto;
-    // grid-template-rows: 70px 45px;
+    grid-template-rows: 70px 45px;
     color: $color__norm-white;
     max-width: 1236px;
     margin: 0 auto;
@@ -75,8 +75,8 @@
         grid-row: 2 / span 1;
         align-self: center;
         @media (max-width: 1099px) {
-            grid-column: 1 / span 5;
-            grid-row: 2 / span 1;
+            grid-column: 5 / span 1;
+            grid-row: 1 / span 1;
             align-self: end;
         }
     }
@@ -140,12 +140,4 @@ header.entry-header {
   .entry-title {
     margin-bottom: 0;
   }
-}
-
-.toggled {
-    .menu-top-nav-container {
-        display: block;
-        // grid-column: 1 / span 5;
-        // grid-row: 2 / span 1;
-    }
 }
