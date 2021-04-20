@@ -18,6 +18,18 @@
     color: $color__norm-white;
     max-width: 1236px;
     margin: 0 auto;
+    @media (max-width: 1099px) {
+        grid-template-columns: 430px 294px 1fr;
+        grid-template-rows: auto;
+    }
+    @media (max-width: 899px) {
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto auto;
+    }
+    @media (max-width: 649px) {
+        grid-template-columns: 2fr 1fr;
+    }
+
     h1, h2 {
         padding: 0;
         margin: 0;
@@ -29,7 +41,7 @@
         font-size: 3rem;
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
-        @media (max-width: 500px) {
+        @media (max-width: 649px) {
             font-size: 2rem;
         }
     }
@@ -38,10 +50,10 @@
         text-transform: none;
         font-weight: 400;
         margin-bottom: 5px;
-        @media (max-width: 767px) {
+        @media (max-width: 899px) {
             grid-row: 2 / span 1;
         }
-        @media (max-width: 500px) {
+        @media (max-width: 649px) {
             font-size: 1rem;
         }
     }
@@ -75,9 +87,19 @@
         grid-row: 2 / span 1;
         align-self: center;
         @media (max-width: 1099px) {
-            grid-column: 5 / span 1;
+            grid-column: 3 / span 1;
+            grid-row: 1 / span 1;
+            align-self: center;
+        }
+        @media (max-width: 899px) {
+            grid-column: 2 / span 1;
             grid-row: 1 / span 1;
             align-self: end;
+        }
+        @media (max-width: 649px) {
+            grid-column: 2 / span 1;
+            grid-row: 1 / span 2;
+            align-self: center;
         }
     }
     .menu-top-nav-container {
@@ -132,6 +154,16 @@
             // padding: 0 1rem 0 0;
             max-width: 100%;
             margin-left: 1rem;
+        }
+    }
+    &--link {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: $color__accent;
+        border-radius: 5px;
+        a {
+            color: $color__background-body;
+            text-decoration: none;
         }
     }
 }

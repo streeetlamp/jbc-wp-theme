@@ -6973,7 +6973,7 @@ textarea {
 }
 
 .sub-menu a {
-	padding: 0 0.8rem 1.5rem;
+	padding: 1.5rem 0.8rem 1.5rem;
 	border-bottom: 1px solid #0f000f;
 }
 
@@ -7003,7 +7003,7 @@ textarea {
 
 .breadcrumb,
 .page-title {
-	max-width: 1204px;
+	max-width: 1202px;
 	margin: 0 auto;
 	padding: 1rem 0;
 	border-bottom: 1px solid #ccc;
@@ -7551,6 +7551,29 @@ body.home header.site-header {
 	margin: 0 auto;
 }
 
+@media (max-width: 1099px) {
+
+	.site-header {
+		grid-template-columns: 430px 294px 1fr;
+		grid-template-rows: auto;
+	}
+}
+
+@media (max-width: 899px) {
+
+	.site-header {
+		grid-template-columns: 3fr 1fr;
+		grid-template-rows: auto auto;
+	}
+}
+
+@media (max-width: 649px) {
+
+	.site-header {
+		grid-template-columns: 2fr 1fr;
+	}
+}
+
 .site-header h1,
 .site-header h2 {
 	padding: 0;
@@ -7566,7 +7589,7 @@ body.home header.site-header {
 	grid-row: 1 / span 1;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 649px) {
 
 	.site-header h1 {
 		font-size: 2rem;
@@ -7580,14 +7603,14 @@ body.home header.site-header {
 	margin-bottom: 5px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 899px) {
 
 	.site-header h2 {
 		grid-row: 2 / span 1;
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 649px) {
 
 	.site-header h2 {
 		font-size: 1rem;
@@ -7635,9 +7658,27 @@ body.home header.site-header {
 @media (max-width: 1099px) {
 
 	.site-header .main-navigation {
-		grid-column: 5 / span 1;
+		grid-column: 3 / span 1;
+		grid-row: 1 / span 1;
+		align-self: center;
+	}
+}
+
+@media (max-width: 899px) {
+
+	.site-header .main-navigation {
+		grid-column: 2 / span 1;
 		grid-row: 1 / span 1;
 		align-self: end;
+	}
+}
+
+@media (max-width: 649px) {
+
+	.site-header .main-navigation {
+		grid-column: 2 / span 1;
+		grid-row: 1 / span 2;
+		align-self: center;
 	}
 }
 
@@ -7721,6 +7762,18 @@ body.home header.site-header {
 	}
 }
 
+.hero-text--link {
+	display: inline-block;
+	padding: 1rem 2rem;
+	background-color: #c5283d;
+	border-radius: 5px;
+}
+
+.hero-text--link a {
+	color: #f9f9f9;
+	text-decoration: none;
+}
+
 header.entry-header .entry-title {
 	margin-bottom: 0;
 }
@@ -7800,7 +7853,7 @@ body.home .slide-inner {
 @media (max-width: 767px) {
 
 	.alt-nav ul {
-		display: block;
+		display: none;
 	}
 }
 
@@ -7903,9 +7956,8 @@ body.home .slide-inner {
 
 .home-featured-cat {
 	color: #fff;
-	padding: 10rem 4vw 0;
+	padding: 9rem 4vw;
 	display: flex;
-	min-height: 450px;
 }
 
 .home-featured-cat:first-of-type {
