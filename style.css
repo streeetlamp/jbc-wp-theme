@@ -7001,6 +7001,15 @@ textarea {
 	margin-bottom: 2rem;
 }
 
+.type-page ul,
+.type-post ul {
+	font-size: 1.5rem;
+	max-width: 70ch;
+	margin: 0 auto 2rem;
+	padding-left: 6rem;
+	line-height: 1.65;
+}
+
 .breadcrumb,
 .page-title {
 	max-width: 1202px;
