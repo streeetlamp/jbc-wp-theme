@@ -9,7 +9,7 @@
 
 // }
 
-.type-page, .type-post  {
+.type-page, .type-post {
     max-width: 1236px;
     padding: 0 1rem;
     margin: 0 auto;
@@ -20,10 +20,18 @@
         margin-bottom: 2rem;
     }
 
+    ul {
+        font-size: 1.5rem;
+        max-width: 70ch;
+        margin: 0 auto 2rem;
+        padding-left: 6rem;
+        line-height: 1.65;
+    }
+
 }
 
 .breadcrumb, .page-title {
-    max-width: 1204px;
+    max-width: 1202px;
     margin: 0 auto;
     padding: 1rem 0;
     border-bottom: 1px solid $color__gray-lite;
