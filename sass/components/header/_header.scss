@@ -2,7 +2,7 @@
     background-color: $color__darkest;
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: $color__norm-white;
     padding-bottom: 1rem;
     // @media (max-width: 767px) {
     //     padding-bottom: 1rem;
@@ -72,11 +72,12 @@
             border-radius: 5px 0 0 5px;
             margin-right: -4px;
             width: 300px;
+            background-color: $color__norm-white;
         }
         .search-submit {
             border: none;
             background-color: $color__super-black;
-            color: #fff;
+            color: $color__norm-white;
             height: 35px;
             border-radius: 0 5px 5px 0;
             padding: 1px 8px;
@@ -113,6 +114,11 @@
         @media (max-width: 1099px) {
             display: none;
         }
+    }
+    .menu-toggle {
+        background: none;
+        color: $color__norm-white;
+        border: 2px solid $color__norm-white;
     }
     ul {
         margin-block-start: 0;
@@ -166,10 +172,10 @@
     &--link {
         display: inline-block;
         padding: 1rem 2rem;
-        background-color: $color__accent;
         border-radius: 5px;
+        border: 2px solid $color__norm-white;
         a {
-            color: $color__background-body;
+            color: $color__norm-white;
             text-decoration: none;
         }
     }

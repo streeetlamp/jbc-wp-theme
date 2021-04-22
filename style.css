@@ -429,7 +429,7 @@ textarea {
 
 .site-title a {
 	text-decoration: none;
-	color: #fff !important;
+	color: #f9f9f9 !important;
 }
 
 h1,
@@ -6817,7 +6817,7 @@ textarea {
 }
 
 .menu-top-nav-container a {
-	color: #fff;
+	color: #f9f9f9;
 }
 
 .main-navigation,
@@ -6922,7 +6922,7 @@ textarea {
 }
 
 .alternative-navigation ul li a {
-	color: #fff;
+	color: #f9f9f9;
 }
 
 .alternative-navigation ul li:first-of-type a {
@@ -7546,7 +7546,7 @@ body.home header.site-header {
 	background-color: #380036;
 	background-size: cover;
 	background-position: center;
-	color: #fff;
+	color: #f9f9f9;
 	padding-bottom: 1rem;
 }
 
@@ -7555,7 +7555,7 @@ body.home header.site-header {
 	display: grid;
 	grid-template-columns: 430px 294px 1fr 1fr auto;
 	grid-template-rows: 70px 45px;
-	color: #fff;
+	color: #f9f9f9;
 	max-width: 1236px;
 	margin: 0 auto;
 }
@@ -7647,12 +7647,13 @@ body.home header.site-header {
 	border-radius: 5px 0 0 5px;
 	margin-right: -4px;
 	width: 300px;
+	background-color: #f9f9f9;
 }
 
 .site-header .search-form .search-submit {
 	border: none;
 	background-color: #000;
-	color: #fff;
+	color: #f9f9f9;
 	height: 35px;
 	border-radius: 0 5px 5px 0;
 	padding: 1px 8px;
@@ -7702,6 +7703,12 @@ body.home header.site-header {
 	.site-header .menu-top-nav-container {
 		display: none;
 	}
+}
+
+.site-header .menu-toggle {
+	background: none;
+	color: #f9f9f9;
+	border: 2px solid #f9f9f9;
 }
 
 .site-header ul {
@@ -7780,8 +7787,8 @@ body.home header.site-header {
 .hero-text--link {
 	display: inline-block;
 	padding: 1rem 2rem;
-	background-color: #c5283d;
 	border-radius: 5px;
+	border: 2px solid #f9f9f9;
 }
 
 .hero-text--link a {
@@ -7970,7 +7977,7 @@ body.home .slide-inner {
 }
 
 .home-featured-cat {
-	color: #fff;
+	color: #f9f9f9;
 	padding: 9rem 4vw;
 	display: flex;
 }
