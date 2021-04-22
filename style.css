@@ -7691,6 +7691,12 @@ body.home header.site-header {
 	}
 }
 
+.site-header .main-navigation.toggled .menu-top-nav-container {
+	display: block;
+	grid-column: 1 / span 3;
+	grid-row: 2 / span 1;
+}
+
 @media (max-width: 1099px) {
 
 	.site-header .menu-top-nav-container {
