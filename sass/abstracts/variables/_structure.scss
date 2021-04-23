@@ -17,4 +17,12 @@ body .site-main {
 
 body.toggled-fixed {
     position: fixed !important;
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-close {
+        display: block;
+    }
 }

@@ -60,6 +60,14 @@ body.toggled-fixed {
 	position: fixed !important;
 }
 
+body.toggled-fixed .menu-toggle {
+	display: none;
+}
+
+body.toggled-fixed .menu-close {
+	display: block;
+}
+
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -7492,6 +7500,14 @@ body.home header.site-header {
 	padding-bottom: 1rem;
 }
 
+.menu-close {
+	cursor: pointer;
+	position: relative;
+	font-size: 2rem;
+	display: none;
+	right: 100px;
+}
+
 .site-header {
 	padding: .5rem 1rem;
 	display: grid;
@@ -7631,7 +7647,9 @@ body.home header.site-header {
 	background-color: #380036;
 	height: 100%;
 	right: 0;
-	top: 0;
+	top: 40px;
+	padding: 20px 40px;
+	z-index: 99;
 }
 
 @media (max-width: 1099px) {

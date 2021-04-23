@@ -11,6 +11,14 @@
     // }
 }
 
+.menu-close {
+    cursor: pointer;
+    position: relative;
+    font-size: 2rem;
+    display: none;
+    right: 100px;
+}
+
 .site-header {
     padding: .5rem 1rem;
     display: grid;
@@ -112,7 +120,9 @@
                 background-color: $color__darkest;
                 height: 100%;
                 right: 0;
-                top: 0;
+                top: 40px;
+                padding: 20px 40px;
+                z-index: 99;
             }
         }
     }
