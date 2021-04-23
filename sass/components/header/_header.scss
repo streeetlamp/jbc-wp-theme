@@ -10,6 +10,7 @@
     //     position: relative;
     // }
 }
+
 .site-header {
     padding: .5rem 1rem;
     display: grid;
@@ -104,9 +105,14 @@
         }
         &.toggled {
             .menu-top-nav-container {
+                position: absolute;
                 display: block;
                 grid-column: 1 / span 3;
                 grid-row: 2 / span 1;
+                background-color: $color__darkest;
+                height: 100%;
+                right: 0;
+                top: 0;
             }
         }
     }
