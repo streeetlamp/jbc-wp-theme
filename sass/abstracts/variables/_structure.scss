@@ -12,3 +12,17 @@ body .site-main {
     margin-bottom: 2em;
     /* Resolves issue with <pre> elements forcing full width. */
 }
+
+
+
+body.toggled-fixed {
+    position: fixed !important;
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-close {
+        display: block;
+    }
+}

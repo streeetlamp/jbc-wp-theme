@@ -2,7 +2,7 @@
     background-color: $color__darkest;
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: $color__norm-white;
     padding-bottom: 1rem;
     // @media (max-width: 767px) {
     //     padding-bottom: 1rem;
@@ -10,6 +10,15 @@
     //     position: relative;
     // }
 }
+
+.menu-close {
+    cursor: pointer;
+    position: relative;
+    font-size: 2rem;
+    display: none;
+    right: 100px;
+}
+
 .site-header {
     padding: .5rem 1rem;
     display: grid;
@@ -72,11 +81,12 @@
             border-radius: 5px 0 0 5px;
             margin-right: -4px;
             width: 300px;
+            background-color: $color__norm-white;
         }
         .search-submit {
             border: none;
             background-color: $color__super-black;
-            color: #fff;
+            color: $color__norm-white;
             height: 35px;
             border-radius: 0 5px 5px 0;
             padding: 1px 8px;
@@ -101,11 +111,30 @@
             grid-row: 1 / span 2;
             align-self: center;
         }
+        &.toggled {
+            .menu-top-nav-container {
+                position: absolute;
+                display: block;
+                grid-column: 1 / span 3;
+                grid-row: 2 / span 1;
+                background-color: $color__darkest;
+                height: 100%;
+                right: 0;
+                top: 40px;
+                padding: 20px 40px;
+                z-index: 99;
+            }
+        }
     }
     .menu-top-nav-container {
         @media (max-width: 1099px) {
             display: none;
         }
+    }
+    .menu-toggle {
+        background: none;
+        color: $color__norm-white;
+        border: 2px solid $color__norm-white;
     }
     ul {
         margin-block-start: 0;
@@ -159,10 +188,10 @@
     &--link {
         display: inline-block;
         padding: 1rem 2rem;
-        background-color: $color__accent;
         border-radius: 5px;
+        border: 2px solid $color__norm-white;
         a {
-            color: $color__background-body;
+            color: $color__norm-white;
             text-decoration: none;
         }
     }
