@@ -238,6 +238,11 @@ function remove_block_css() {
 }
 
 /*
+* Pullquotes in editor toolbar
+*/
+require('inc/jbc-pullquotes.php');
+
+/*
 * Customize menu thing is annoying
 */
 add_action( 'wp_before_admin_bar_render', 'jbc_before_admin_bar_render' );
