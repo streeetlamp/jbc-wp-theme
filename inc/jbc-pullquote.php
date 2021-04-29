@@ -6,7 +6,7 @@ function jbc_pullquotes() {
     add_filter( 'mce_buttons', 'jbc_register_buttons' );
 }
 function jbc_add_buttons( $plugin_array ) {
-    $plugin_array['wptuts'] = get_template_directory_uri() . '/js/pullquotes.js';
+    $plugin_array['pullquote'] = get_template_directory_uri() . '/js/pullquote.js';
     return $plugin_array;
 }
 function jbc_register_buttons( $buttons ) {
