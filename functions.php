@@ -240,7 +240,7 @@ function remove_block_css() {
 /*
 * Pullquotes in editor toolbar
 */
-require('inc/jbc-pullquote.php');
+require 'inc/jbc-pullquote.php';
 
 /*
 * Customize menu thing is annoying

@@ -12,7 +12,7 @@
       ed.addButton('pullquote', {
         title: 'PullQuote',
         cmd: 'pullquote',
-        image: url + '/favicon-16x16.png'
+        image: url + '/../inc/quote.svg'
       });
 
       ed.addCommand('pullquote', function() {
