@@ -142,13 +142,13 @@ add_action( 'customize_register', 'jbc_remove_sections' );
 
 add_action( 'admin_menu', 'jbc_remove_admin_menus' );
 function jbc_remove_admin_menus() {
-	remove_menu_page( 'edit-comments.php' );
+	 remove_menu_page( 'edit-comments.php' );
 }
 // Removes from post and pages
 add_action( 'init', 'remove_comment_support', 100 );
 
 function remove_comment_support() {
-	remove_post_type_support( 'post', 'comments' );
+	 remove_post_type_support( 'post', 'comments' );
 	remove_post_type_support( 'page', 'comments' );
 }
 // Removes from admin bar
@@ -211,6 +211,24 @@ function jbc_scripts() {
 	// }
 }
 add_action( 'wp_enqueue_scripts', 'jbc_scripts' );
+
+function jbc_list_child_pages() { 
+	global $post;
+
+	if ( is_page() && $post->post_parent ) {
+		$childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->post_parent . '&echo=0' );
+	} else {
+		$childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->ID . '&echo=0' );
+	}
+
+	if ( $childpages ) {
+		$string = '<ul>' . $childpages . '</ul>';
+	}
+
+	return $string;
+}
+
+add_shortcode( 'jbc_childpages', 'jbc_list_child_pages' );
 
 
 // Remove Open Sans that WP adds from frontend
