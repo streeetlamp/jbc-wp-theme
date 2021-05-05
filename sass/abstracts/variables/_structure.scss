@@ -24,5 +24,12 @@ body.toggled-fixed {
 
     .menu-close {
         display: block;
+        position: relative;
+        z-index: 99;
+        padding: 0;
+        background: 0;
+        border: 0;
+        color: $color__background-body;
+        right: -60px;
     }
 }

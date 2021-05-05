@@ -66,6 +66,13 @@ body.toggled-fixed .menu-toggle {
 
 body.toggled-fixed .menu-close {
 	display: block;
+	position: relative;
+	z-index: 99;
+	padding: 0;
+	background: 0;
+	border: 0;
+	color: #f9f9f9;
+	right: -60px;
 }
 
 /*--------------------------------------------------------------
@@ -7501,10 +7508,8 @@ body.home header.site-header {
 
 .menu-close {
 	cursor: pointer;
-	position: relative;
 	font-size: 2rem;
 	display: none;
-	right: 100px;
 }
 
 .site-header {
@@ -7647,8 +7652,15 @@ body.home header.site-header {
 	height: 100%;
 	right: 0;
 	top: 40px;
-	padding: 20px 40px;
-	z-index: 99;
+	padding: 80px 40px;
+}
+
+.site-header .main-navigation.toggled .menu-top-nav-container li {
+	padding: 10px 0;
+}
+
+.site-header .main-navigation.toggled .menu-top-nav-container li li {
+	padding: 0;
 }
 
 @media (max-width: 1099px) {

@@ -59,8 +59,8 @@
 				get_search_form();
 				?>
 				<nav id="site-navigation" class="main-navigation">
-					<i id="mobile-close" class="menu-close fas fa-times-circle"></i>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars" style="padding-right:10px;"></i>Menu</button>
+					<button id="mobile-close" class="menu-close"><i class="fas fa-times-circle"></i></button>
 					<?php
 					wp_nav_menu(
 						array(
