@@ -18,6 +18,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<script type="text/javascript" data-referrer="false" src="//branding.vcu.edu/bar/academic/latest.js" data-color-bottom="black"></script>
 	<?php wp_head(); ?>
 </head>
 
