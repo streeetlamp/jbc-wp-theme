@@ -3,11 +3,11 @@
 let windowLoc = window.document.location.href;
 
 jQuery.get('https://apps.library.vcu.edu/pub_scripts/js/templates/banner.html', function (template) {
-  var body = jQuery('body');
+  var page = jQuery('#page');
   var rendered = Mustache.render(template, {
     title: 'Welcome to the new James Branch Cabell website. ',
     strong: 'Report a problem or let us know what you think.',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSdA8VEfDjlQHesJurJTrpvx_qWf8cPqZUtB54IP6zn3nV_Ykg/viewform?entry.371700483='+windowLoc,
   });
-  body.prepend(rendered);
+  page.prepend(rendered);
 })
