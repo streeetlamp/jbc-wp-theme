@@ -20,13 +20,13 @@
 .site-header {
     padding: .5rem 1rem;
     display: grid;
-    grid-template-columns: 430px 294px 1fr 1fr auto;
+    grid-template-columns: auto auto 1fr 1fr auto;
     grid-template-rows: 70px 45px;
     color: $color__norm-white;
     max-width: 1236px;
     margin: 0 auto;
     @media (max-width: 1099px) {
-        grid-template-columns: 430px 294px 1fr;
+        grid-template-columns: auto auto 1fr;
         grid-template-rows: auto;
     }
     @media (max-width: 899px) {
@@ -38,7 +38,7 @@
     }
 
     h1, h2 {
-        padding: 0;
+        padding: 0 1rem 0 0;
         margin: 0;
         align-self: end;
         margin-block-start: 0;
@@ -139,6 +139,8 @@
         background: none;
         color: $color__norm-white;
         border: 2px solid $color__norm-white;
+        max-width: 200px;
+        justify-self: end;
     }
     ul {
         margin-block-start: 0;
