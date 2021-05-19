@@ -14,6 +14,15 @@
 
 <footer id="colophon" class="site-footer">
 	<div class="info-footer">
+        <div class="footer-info">
+            <img src="https://apps.library.vcu.edu/assets/public/images/bm_Libraries_RF_hz_4c_rev" alt="VCU Libraries logo">
+            <ul>
+                <li>901 Park Ave., Box 842033</li>
+                <li>Richmond, VA 23284-2033</li>
+                <li>Toll-free: (844) 352-7399</li>
+                <li>Local: (804) 828-1111</li>
+            </ul>
+        </div>
 		<nav id="footer-nav" class="footer-navigation">
 			<?php
 			wp_nav_menu(
@@ -24,6 +33,14 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
+        <ul class="footer-links">
+            <li><a href="//www.vcu.edu/">Virginia Commonwealth University</a></li>
+            <li><a href="//www.library.vcu.edu/about/guidelines/copyright-privacy/">Copyright &amp; Privacy</a></li>
+            <li><a href="//www.library.vcu.edu/access/accessibility/">Accessibility</a></li>
+            <li><a href="//www.library.vcu.edu/about/giving/">Giving</a></li>
+            <li><a href="//text.vcu.edu/tt/referrer">Text Only</a></li>
+            <li><a href="#">Site Map</a></li>
+        </ul>
 		<?php
 		if ( shortcode_exists( 'jetpack_subscription_form' ) ) {
 			echo do_shortcode( '[jetpack_subscription_form title="Subscribe for Updates" subscribe_text="Enter your email address to subscribe and receive notifications of new updates by email."]' );

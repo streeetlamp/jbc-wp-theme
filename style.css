@@ -6891,10 +6891,6 @@ textarea {
 	justify-content: center;
 }
 
-.menu-footer-container {
-	padding: 2em 1em 0 1em;
-}
-
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -7454,11 +7450,17 @@ body.home header.site-header {
 	background-color: #380036;
 	color: #f9f9f9;
 	width: 100%;
-	padding-bottom: 20px;
+	padding: 3rem 0;
 }
 
 .site-footer a {
 	color: #f9f9f9;
+}
+
+.site-footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .site-footer .info-footer {
@@ -7466,11 +7468,14 @@ body.home header.site-header {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 4rem;
 }
 
 .last-modified {
-	margin-top: 20px;
 	text-align: center;
+	grid-column: 1/ span 3;
 }
 
 .jetpack_subscription_widget {
