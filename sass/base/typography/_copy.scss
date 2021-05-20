@@ -25,6 +25,18 @@ blockquote {
         max-width: 100%;
     }
 }
+
+.pullquote {
+    float: left;
+    width: 350px;
+    font-size: 3rem;
+    color: $color__darkest;
+    margin: 2rem 2rem 2rem 0;
+    border-top: 4px solid $color__darkest;
+    border-bottom: 4px solid $color__darkest;
+    padding: 1.5rem 0 1.5rem .5rem;
+}
+
 // blockquote:before {
 //     color: $color__dark;
 //     content: open-quote;

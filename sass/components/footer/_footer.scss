@@ -32,12 +32,12 @@
 }
 
 .jetpack_subscription_widget {
-    width: 100%;
+    grid-column: 1 / span 3;
     text-align: center;
     margin: 0 auto 0 auto;
     max-width: 100%;
 
-    .subscribe-text {
+    #subscribe-text {
         margin: 15px 0 10px;
     }
 

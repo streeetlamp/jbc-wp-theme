@@ -475,6 +475,17 @@ blockquote p {
 	max-width: 100%;
 }
 
+.pullquote {
+	float: left;
+	width: 350px;
+	font-size: 3rem;
+	color: #380036;
+	margin: 2rem 2rem 2rem 0;
+	border-top: 4px solid #380036;
+	border-bottom: 4px solid #380036;
+	padding: 1.5rem 0 1.5rem .5rem;
+}
+
 address {
 	margin: 0 0 1.5em;
 }
@@ -6686,15 +6697,15 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #C5283D;
+	color: #2A4872;
 }
 
 a:visited {
-	color: #255F85;
+	color: #2A4872;
 }
 
 a:hover, a:focus, a:active {
-	color: #2F305E;
+	color: #C5283D;
 }
 
 a:focus {
@@ -7479,13 +7490,13 @@ body.home header.site-header {
 }
 
 .jetpack_subscription_widget {
-	width: 100%;
+	grid-column: 1 / span 3;
 	text-align: center;
 	margin: 0 auto 0 auto;
 	max-width: 100%;
 }
 
-.jetpack_subscription_widget .subscribe-text {
+.jetpack_subscription_widget #subscribe-text {
 	margin: 15px 0 10px;
 }
 
