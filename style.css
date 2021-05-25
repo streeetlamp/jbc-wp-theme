@@ -496,6 +496,10 @@ blockquote p {
 	padding: 1.5rem 0 1.5rem 0.5rem;
 }
 
+figcaption {
+	color: #2f305e;
+}
+
 address {
 	margin: 0 0 1.5em;
 }
@@ -7010,6 +7014,19 @@ textarea {
 	max-width: 1236px;
 	padding: 0 1rem;
 	margin: 0 auto;
+}
+
+.type-page h2,
+.type-page h3,
+.type-page h4,
+.type-page h5,
+.type-page h6,
+.type-post h2,
+.type-post h3,
+.type-post h4,
+.type-post h5,
+.type-post h6 {
+	color: #380036;
 }
 
 .type-page p,
