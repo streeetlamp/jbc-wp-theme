@@ -20,3 +20,15 @@ a {
 		outline: 0;
 	}
 }
+.donate {
+    margin-top: 1.75rem;
+    a {
+        padding: .5rem .8rem;
+        background-color: $color__dark;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    span {
+        margin-right: .25rem;
+    }
+}
