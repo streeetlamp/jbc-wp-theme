@@ -6644,10 +6644,11 @@ body.home {
 }
 
 hr {
-	background-color: #ccc;
 	border: 0;
 	height: 1px;
-	margin-bottom: 1.5em;
+	width: 500px;
+	margin: 3rem auto 2.5rem;
+	background-image: linear-gradient(to right, rgba(56, 0, 54, 0), rgba(56, 0, 54, 0.4), rgba(56, 0, 54, 0));
 }
 
 ul,
@@ -6718,6 +6719,21 @@ a:focus {
 
 a:hover, a:active {
 	outline: 0;
+}
+
+.donate {
+	margin-top: 1.75rem;
+}
+
+.donate a {
+	padding: 0.5rem 0.8rem;
+	background-color: #2a4872;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.donate span {
+	margin-right: 0.25rem;
 }
 
 /* Forms
@@ -6994,6 +7010,13 @@ textarea {
 
 .type-page h2, .type-page h3, .type-page h4, .type-page h5, .type-page h6, .type-post h2, .type-post h3, .type-post h4, .type-post h5, .type-post h6 {
 	color: #380036;
+	margin: 0 auto;
+}
+
+.type-page h2,
+.type-post h2 {
+	max-width: 58ch;
+	margin-bottom: 1.5rem;
 }
 
 .type-page p, .type-post p {
