@@ -37,6 +37,11 @@ blockquote {
     padding: 1.5rem 0 1.5rem .5rem;
 }
 
+.infobox {
+    border-radius: 2px;
+    background-color: $color__background-screen;
+}
+
 figcaption {
     color: $color__darker;
 }
