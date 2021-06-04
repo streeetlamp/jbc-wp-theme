@@ -496,6 +496,11 @@ blockquote p {
 	padding: 1.5rem 0 1.5rem 0.5rem;
 }
 
+.infobox {
+	border-radius: 2px;
+	background-color: #f8f4e3;
+}
+
 figcaption {
 	color: #2f305e;
 }
@@ -6786,6 +6791,11 @@ input[type="submit"]:focus {
 	border-color: #aaa #bbb #bbb;
 }
 
+.donate a {
+	padding: 1rem 1.5rem;
+	border-radius: 3px;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -7557,6 +7567,7 @@ body.home header.site-header {
 	color: #f9f9f9;
 	width: 100%;
 	padding: 3rem 0;
+	font-size: 1.5rem;
 }
 
 .site-footer a {
