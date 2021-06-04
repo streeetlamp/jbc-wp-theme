@@ -6731,14 +6731,14 @@ a:hover, a:active {
 }
 
 .donate a {
-	padding: 0.5rem 0.8rem;
-	background-color: #2a4872;
+	padding: .5rem .8rem;
+	background-color: #2A4872;
 	border-radius: 5px;
 	text-decoration: none;
 }
 
 .donate span {
-	margin-right: 0.25rem;
+	margin-right: .25rem;
 }
 
 /* Forms
@@ -6835,6 +6835,71 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
+.main-navigation {
+	display: grid;
+	width: 100%;
+	gap: 20px;
+}
+
+.main-navigation ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.main-navigation ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	top: 100%;
+	left: -999em;
+	z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+	display: block;
+	left: auto;
+}
+
+.main-navigation ul ul a {
+	width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+	left: auto;
+}
+
+.main-navigation li {
+	position: relative;
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 1097px) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: grid;
+	}
+}
+
 .alternative-navigation {
 	gap: 0 !important;
 }
@@ -6852,7 +6917,6 @@ textarea {
 	color: #f9f9f9;
 }
 
-.main-navigation,
 .footer-navigation,
 .alternative-navigation {
 	display: grid;
@@ -6860,7 +6924,6 @@ textarea {
 	gap: 20px;
 }
 
-.main-navigation ul,
 .footer-navigation ul,
 .alternative-navigation ul {
 	display: none;
@@ -6869,7 +6932,6 @@ textarea {
 	padding-left: 0;
 }
 
-.main-navigation ul ul,
 .footer-navigation ul ul,
 .alternative-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -6880,15 +6942,12 @@ textarea {
 	z-index: 99999;
 }
 
-.main-navigation ul ul ul,
 .footer-navigation ul ul ul,
 .alternative-navigation ul ul ul {
 	left: -999em;
 	top: 0;
 }
 
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul,
 .footer-navigation ul ul li:hover > ul,
 .footer-navigation ul ul li.focus > ul,
 .alternative-navigation ul ul li:hover > ul,
@@ -6897,14 +6956,11 @@ textarea {
 	left: auto;
 }
 
-.main-navigation ul ul a,
 .footer-navigation ul ul a,
 .alternative-navigation ul ul a {
 	width: 300px;
 }
 
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul,
 .footer-navigation ul li:hover > ul,
 .footer-navigation ul li.focus > ul,
 .alternative-navigation ul li:hover > ul,
@@ -6912,13 +6968,11 @@ textarea {
 	left: auto;
 }
 
-.main-navigation li,
 .footer-navigation li,
 .alternative-navigation li {
 	position: relative;
 }
 
-.main-navigation a,
 .footer-navigation a,
 .alternative-navigation a {
 	display: block;
@@ -7023,8 +7077,7 @@ textarea {
 	margin: 0 auto;
 }
 
-.type-page h2,
-.type-post h2 {
+.type-page h2, .type-post h2 {
 	max-width: 58ch;
 	margin-bottom: 1.5rem;
 }
@@ -7708,7 +7761,7 @@ body.home header.site-header {
 	grid-row: 2 / span 1;
 	background-color: #380036;
 	height: 100%;
-	right: 0;
+	left: 0;
 	top: 40px;
 	padding: 80px 40px;
 }

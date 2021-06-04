@@ -59,8 +59,7 @@
 				get_search_form();
 				?>
 				<nav id="site-navigation" class="main-navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars" style="padding-right:10px;"></i>Menu</button>
-					<button id="mobile-close" class="menu-close"><i class="fas fa-times-circle"></i></button>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars" style="padding-right:10px;"></i><?php esc_html_e( 'Menu', 'jbc-wp-theme' ); ?></button>
 					<?php
 					wp_nav_menu(
 						array(
