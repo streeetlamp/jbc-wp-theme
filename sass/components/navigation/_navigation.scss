@@ -31,7 +31,7 @@
 			}
 
 			a {
-				width: 200px;
+				width: 300px;
 			}
 
 			:hover > a,
@@ -269,4 +269,9 @@
             color: $color__alt-dark;
         }
     }
+
+    .submenu {
+        left: 200px;
+    }
+
 }

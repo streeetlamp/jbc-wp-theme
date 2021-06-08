@@ -66,13 +66,6 @@ body.toggled-fixed .menu-toggle {
 
 body.toggled-fixed .menu-close {
 	display: block;
-	position: relative;
-	z-index: 99;
-	padding: 0;
-	background: 0;
-	border: 0;
-	color: #f9f9f9;
-	right: -60px;
 }
 
 /*--------------------------------------------------------------
@@ -6864,7 +6857,7 @@ textarea {
 }
 
 .main-navigation ul ul a {
-	width: 200px;
+	width: 300px;
 }
 
 .main-navigation ul li:hover > ul,
@@ -7053,6 +7046,10 @@ textarea {
 
 .sub-menu a:hover {
 	color: #FFC95C;
+}
+
+.sub-menu .submenu {
+	left: 200px;
 }
 
 /* Posts and pages
@@ -7612,16 +7609,10 @@ body.home header.site-header {
 	padding-bottom: 1rem;
 }
 
-.menu-close {
-	cursor: pointer;
-	font-size: 2rem;
-	display: none;
-}
-
 .site-header {
 	padding: .5rem 1rem;
 	display: grid;
-	grid-template-columns: 430px 294px 1fr 1fr auto;
+	grid-template-columns: auto auto 1fr 1fr auto;
 	grid-template-rows: 70px 45px;
 	color: #f9f9f9;
 	max-width: 1236px;
@@ -7630,7 +7621,7 @@ body.home header.site-header {
 
 @media (max-width: 1099px) {
 	.site-header {
-		grid-template-columns: 430px 294px 1fr;
+		grid-template-columns: auto auto 1fr;
 		grid-template-rows: auto;
 	}
 }
@@ -7649,7 +7640,7 @@ body.home header.site-header {
 }
 
 .site-header h1, .site-header h2 {
-	padding: 0;
+	padding: 0 1rem 0 0;
 	margin: 0;
 	align-self: end;
 	margin-block-start: 0;
@@ -7756,17 +7747,10 @@ body.home header.site-header {
 	grid-row: 2 / span 1;
 	background-color: #380036;
 	height: 100%;
-	left: 0;
+	right: 0;
 	top: 40px;
-	padding: 80px 40px;
-}
-
-.site-header .main-navigation.toggled .menu-top-nav-container li {
-	padding: 10px 0;
-}
-
-.site-header .main-navigation.toggled .menu-top-nav-container li li {
-	padding: 0;
+	padding: 20px 40px;
+	z-index: 99;
 }
 
 @media (max-width: 1099px) {
@@ -7779,6 +7763,8 @@ body.home header.site-header {
 	background: none;
 	color: #f9f9f9;
 	border: 2px solid #f9f9f9;
+	max-width: 200px;
+	justify-self: end;
 }
 
 .site-header ul {
