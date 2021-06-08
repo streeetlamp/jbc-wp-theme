@@ -6773,11 +6773,6 @@ input[type="submit"]:focus {
 	border-color: #aaa #bbb #bbb;
 }
 
-.donate a {
-	padding: 1rem 1.5rem;
-	border-radius: 3px;
-}
-
 input[type="text"],
 input[type="email"],
 input[type="url"],
