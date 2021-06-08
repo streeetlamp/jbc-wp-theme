@@ -52,7 +52,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import url(https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Quattrocento+Sans&family=Oswald&display=swap);
 body .site-main {
 	grid-area: main;
-	margin-bottom: 2em;
+	padding-bottom: 4rem;
 	/* Resolves issue with <pre> elements forcing full width. */
 }
 
@@ -6771,11 +6771,6 @@ input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
 	border-color: #aaa #bbb #bbb;
-}
-
-.donate a {
-	padding: 1rem 1.5rem;
-	border-radius: 3px;
 }
 
 input[type="text"],
