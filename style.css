@@ -7024,6 +7024,10 @@ textarea {
 	color: #ffc95c;
 }
 
+.sub-menu .submenu {
+	left: 200px;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
