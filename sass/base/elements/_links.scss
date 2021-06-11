@@ -19,7 +19,7 @@ a {
 	&:active {
 		outline: 0;
 	}
-    &:not([href*='cabell-wp.local']):not([href^='#']):not([href^='/']):after {
+    &:not([href*='cabellstage.wpengine.com']):not([href^='#']):not([href^='/']):after {
         font-family: 'Font Awesome 5 Free';
         content: " \f360";
         font-weight: 400;
