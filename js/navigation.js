@@ -7,10 +7,6 @@
 ( function() {
 	const siteNavigation = document.getElementById( 'site-navigation' );
 
-	const siteBody = document.body;
-
-	const menuClose = document.getElementById( 'mobile-close' )
-
 	// Return early if the navigation don't exist.
 	if ( ! siteNavigation ) {
 		return;
@@ -38,7 +34,6 @@
 	// Toggle the .toggled class and the aria-expanded value each time the button is clicked.
 	button.addEventListener( 'click', function() {
 		siteNavigation.classList.toggle( 'toggled' );
-		siteBody.classList.toggle( 'toggled-fixed' );
 
 		if ( button.getAttribute( 'aria-expanded' ) === 'true' ) {
 			button.setAttribute( 'aria-expanded', 'false' );
@@ -47,24 +42,12 @@
 		}
 	} );
 
-	menuClose.addEventListener( 'click', function () {
-			siteBody.classList.toggle( 'toggled-fixed' );
-			siteNavigation.classList.toggle( 'toggled' );
-
-		if ( button.getAttribute( 'aria-expanded' ) === 'true' ) {
-			button.setAttribute( 'aria-expanded', 'false' );
-		} else {
-			button.setAttribute( 'aria-expanded', 'true' );
-		}
-	})
-
 	// Remove the .toggled class and set aria-expanded to false when the user clicks outside the navigation.
 	document.addEventListener( 'click', function( event ) {
 		const isClickInside = siteNavigation.contains( event.target );
 
 		if ( ! isClickInside ) {
 			siteNavigation.classList.remove( 'toggled' );
-			siteBody.classList.remove( 'toggled-fixed' );
 			button.setAttribute( 'aria-expanded', 'false' );
 		}
 	} );

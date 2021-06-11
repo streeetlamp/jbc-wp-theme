@@ -10,7 +10,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.44' );
+	define( '_S_VERSION', '1.0.67' );
 }
 
 if ( ! function_exists( 'jbc_setup' ) ) :
@@ -142,13 +142,13 @@ add_action( 'customize_register', 'jbc_remove_sections' );
 
 add_action( 'admin_menu', 'jbc_remove_admin_menus' );
 function jbc_remove_admin_menus() {
-	remove_menu_page( 'edit-comments.php' );
+	 remove_menu_page( 'edit-comments.php' );
 }
 // Removes from post and pages
 add_action( 'init', 'remove_comment_support', 100 );
 
 function remove_comment_support() {
-	remove_post_type_support( 'post', 'comments' );
+	 remove_post_type_support( 'post', 'comments' );
 	remove_post_type_support( 'page', 'comments' );
 }
 // Removes from admin bar
@@ -212,6 +212,24 @@ function jbc_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'jbc_scripts' );
 
+function jbc_list_child_pages() { 
+	global $post;
+
+	if ( is_page() && $post->post_parent ) {
+		$childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->post_parent . '&echo=0' );
+	} else {
+		$childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->ID . '&echo=0' );
+	}
+
+	if ( $childpages ) {
+		$string = '<ul>' . $childpages . '</ul>';
+	}
+
+	return $string;
+}
+
+add_shortcode( 'jbc_childpages', 'jbc_list_child_pages' );
+
 
 // Remove Open Sans that WP adds from frontend
 if ( ! function_exists( 'remove_wp_open_sans' ) ) :
@@ -236,6 +254,11 @@ function remove_block_css() {
 	wp_dequeue_style( 'wc-block-style' ); // WooCommerce
 	wp_dequeue_style( 'storefront-gutenberg-blocks' ); // Storefront theme
 }
+
+/*
+* Pullquotes in editor toolbar
+*/
+require 'inc/jbc-pullquote.php';
 
 /*
 * Customize menu thing is annoying

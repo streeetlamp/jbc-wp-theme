@@ -18,8 +18,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<script type="text/javascript" defer src="//branding.vcu.edu/bar/academic/latest.js" data-color-top-campaign="white"></script>
 	<?php wp_head(); ?>
-    <script type="text/javascript" src="//branding.vcu.edu/bar/academic/latest.js" data-color-top-campaign="graydark"></script>
+	<script type="text/javascript" src="//branding.vcu.edu/bar/academic/latest.js" data-color-top-campaign="graydark"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -58,8 +59,7 @@
 				get_search_form();
 				?>
 				<nav id="site-navigation" class="main-navigation">
-					<i id="mobile-close" class="menu-close fas fa-times-circle"></i>
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars" style="padding-right:10px;"></i>Menu</button>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars" style="padding-right:10px;"></i><?php esc_html_e( 'Menu', 'jbc-wp-theme' ); ?></button>
 					<?php
 					wp_nav_menu(
 						array(

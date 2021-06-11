@@ -18,22 +18,24 @@ get_header();
 <main id="primary" class="site-main">
 
 	<nav id="alt-nav" class="alt-nav">
-		<!-- <?php
+		<!-- 
+		<?php
 		wp_nav_menu(
 			array(
 				'theme_location' => 'alt-nav',
 				'menu_id'        => 'Alternative',
 			)
 		);
-		?> -->
+		?>
+		 -->
 
-        <div class="menu-alternative-nav-container">
-            <ul class="menu" id="Alternative">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
+		<div class="menu-alternative-nav-container">
+			<ul class="menu" id="Alternative">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
 
 	</nav><!-- #alt-navigation -->
 	<?php
