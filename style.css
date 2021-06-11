@@ -6743,7 +6743,7 @@ a:active {
 	outline: 0;
 }
 
-a:not([href*="cabell-wp.local"]):not([href^="#"]):not([href^="/"])::after {
+a:not([href*="cabellstage.wpengine.com"]):not([href^="#"]):not([href^="/"])::after {
 	font-family: "Font Awesome 5 Free";
 	content: " \f360";
 	font-weight: 400;
@@ -7075,7 +7075,7 @@ textarea {
 }
 
 .sub-menu a {
-	padding: 1.5rem 0.8rem 1.5rem;
+	padding: 1rem 0.6rem 1rem;
 	border-bottom: 1px solid #0f000f;
 }
 
