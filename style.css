@@ -6978,7 +6978,7 @@ textarea {
 
 .footer-navigation ul ul a,
 .alternative-navigation ul ul a {
-	width: 300px;
+	width: 275px;
 }
 
 .footer-navigation ul li:hover > ul,
@@ -7083,8 +7083,8 @@ textarea {
 	color: #ffc95c;
 }
 
-.sub-menu .submenu {
-	left: 200px;
+.sub-menu .sub-menu {
+	left: 275px;
 }
 
 /* Posts and pages
