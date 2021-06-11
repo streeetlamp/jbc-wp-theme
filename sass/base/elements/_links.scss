@@ -19,13 +19,17 @@ a {
 	&:active {
 		outline: 0;
 	}
+    &:not([href*='cabell-wp.local']):not([href^='#']):not([href^='/']):after {
+        font-family: 'Font Awesome 5 Free';
+        content: " \f360";
+        font-weight: 400;
+    }
 }
 .donate {
     margin-top: 1.75rem;
     a {
-        padding: .5rem .8rem;
+        padding: 1rem 1.5rem;
         background-color: $color__dark;
-        border-radius: 5px;
         text-decoration: none;
     }
     span {
