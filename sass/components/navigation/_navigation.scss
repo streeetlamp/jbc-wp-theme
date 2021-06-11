@@ -269,9 +269,9 @@
             color: $color__alt-dark;
         }
     }
-
-    .sub-menu {
-        left: 275px;
+    li:hover {
+        .sub-menu {
+            left: 300px;
+        }
     }
-
 }
