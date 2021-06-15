@@ -79,7 +79,7 @@
 				?>
 				<div class="hero-text">
 					<h2 class="hero-text--heading"><?php echo esc_html( $headline ); ?></h2>
-					<p class="hero-text--desc"><?php echo esc_html( $excerpt ); ?></p>
+					<span class="hero-text--desc"><?php echo ( $excerpt ); ?></span>
 					<?php
 					if ( $hero_link ) :
 						echo ( "<h3 class='hero-text--link'><a href='" . esc_url( $hero_link ) . "'>" . esc_html( $hero_title ) . '</a></h3>' );

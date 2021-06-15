@@ -49,7 +49,7 @@
             "key": "field_601abfb7cc5c1",
             "label": "Excerpt",
             "name": "excerpt",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -59,10 +59,10 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "maxlength": 320,
-            "rows": 4,
-            "new_lines": ""
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "full",
+            "delay": 0
         },
         {
             "key": "field_6070ae8e5de0a",
@@ -101,5 +101,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1617997469
+    "modified": 1623772357
 }
