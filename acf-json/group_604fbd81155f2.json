@@ -6,26 +6,26 @@
             "key": "field_604fbd8ded957",
             "label": "Featured Quote",
             "name": "quote",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "",
+                "class": "frontpage-quote",
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "maxlength": 480,
-            "rows": "",
-            "new_lines": ""
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "full",
+            "delay": 0
         },
         {
             "key": "field_6058f2f8a4a8f",
             "label": "Attribution",
             "name": "attribution_jbc",
-            "type": "text",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -35,10 +35,10 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "full",
+            "delay": 0
         }
     ],
     "location": [
@@ -51,7 +51,7 @@
         ]
     ],
     "menu_order": 0,
-    "position": "normal",
+    "position": "acf_after_title",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
@@ -63,5 +63,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1617997545
+    "modified": 1623861182
 }
