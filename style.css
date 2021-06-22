@@ -6745,8 +6745,11 @@ a:active {
 
 a:not([href*="cabellstage.wpengine.com"]):not([href^="#"]):not([href^="/"])::after {
 	font-family: "Font Awesome 5 Free";
-	content: " \f360";
+	content: " \f35d";
 	font-weight: 400;
+	display: inline-block;
+	font-size: 0.9rem;
+	margin-left: 0.5rem;
 }
 
 .donate {
