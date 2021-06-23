@@ -6748,8 +6748,8 @@ a:not([href*="cabellstage.wpengine.com"]):not([href^="#"]):not([href^="/"])::aft
 	content: " \f35d";
 	font-weight: 400;
 	display: inline-block;
-	font-size: 0.9rem;
-	margin-left: 0.5rem;
+	font-size: 0.6em;
+	margin-left: 0.5em;
 }
 
 .donate {
