@@ -51,11 +51,11 @@ get_header();
 			$the_query->the_post();
 			$quote           = get_field( 'quote' );
 			$attribution_jbc = get_field( 'attribution_jbc' );
-			$quote = str_replace(['<p>', '</p>'], '', $quote);
-			$attribution_jbc = str_replace(['<p>', '</p>'], '', $attribution_jbc);
+			$quote           = str_replace( array( '<p>', '</p>' ), '', $quote );
+			$attribution_jbc = str_replace( array( '<p>', '</p>' ), '', $attribution_jbc );
 			?>
 			<div class="home-quote">
-				<?php echo ( '<p class="frontpage-quote">' . $quote . '<br>' . $attribution_jbc  . '</p>' ); ?>
+				<?php echo ( '<p class="frontpage-quote">' . $quote . '<br>' . $attribution_jbc . '</p>' ); ?>
 			</div>
 			<?php
 	endwhile;
