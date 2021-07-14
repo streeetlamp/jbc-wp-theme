@@ -13,14 +13,13 @@ FEATURE PUNCH DOWN LIST
 ✔ Featured Images (ex: SWHP) @done(21-02-03 16:49)
 ☐ Excerpts for browsing type pages
 ✔ Main and Alternative Navigation @done(21-01-07 14:04)
-☐ Style Main and Alternative Navigation 
-✔ Footer Nav @done(21-01-07 14:04)
+✔ Style Main and Alternative Navigation @done(21-07-14 16:09)
+✔ Footer Nav @done(21-07-14 16:09)
 ✔ Style Footer Nav @done(21-04-07 15:08)
 ✔ Install ACF @done(21-04-07 15:08)
 ✔ drop in ACF flex loop @done(21-01-06 13:22)
 ✔ create JBC site logo and favicon @done(21-04-13 12:46)
 ✔ add Oswald type @done(21-01-12 13:12)
-☐ bibliography post type?
 ✔ home rotating quotes post type @done(21-01-14 16:06)
 ✔ home featured taxonomy should actually just be posts @done(21-01-28 12:04)
 ☐ Cabell writes in Latin, Greek, French, English (maybe others). look into if supported correctly
@@ -36,3 +35,4 @@ FEATURE PUNCH DOWN LIST
 ✔ prevent media upload breaking @done(21-04-13 15:21)
 ✔ top level child page list short code @done(21-05-04 15:44)
 ✔ branding bar @done(21-05-05 12:33)
+☐ Stray thing I noticed. The breadcrumb outline pages don't re-order if the menu order changes. Is there something I should be doing to make that happen? See for example: https://jbcdev.wpengine.com/inspired-by-cabell/
