@@ -26,7 +26,9 @@
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
-		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'jbc-wp-theme' ); ?></a>
+		<div role="region" aria-label="Skip to content link">
+			<a class="skip-link screen-reader-text" href="#primary" tabindex="1"><?php esc_html_e( 'Skip to content', 'jbc-wp-theme' ); ?></a>
+		</div>
 		<section class="hero"
 		<?php
 		if ( is_front_page() ) :
@@ -58,7 +60,7 @@
 				endif;
 				get_search_form();
 				?>
-				<nav id="site-navigation" class="main-navigation">
+				<nav id="site-navigation" class="main-navigation" aria-label="Main Menu">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars" style="padding-right:10px;"></i><?php esc_html_e( 'Menu', 'jbc-wp-theme' ); ?></button>
 					<?php
 					wp_nav_menu(
