@@ -6799,6 +6799,13 @@ input[type="submit"]:focus {
 	border-color: #aaa #bbb #bbb;
 }
 
+.call-to-action {
+	background-color: #2a4872;
+	border-radius: 5px;
+	display: block;
+	padding: 1rem 2rem;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
