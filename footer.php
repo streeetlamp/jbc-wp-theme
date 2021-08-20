@@ -40,7 +40,7 @@
 			<li><a href="//www.library.vcu.edu/about/guidelines/copyright-privacy/">Copyright &amp; Privacy</a></li>
 			<li><a href="//www.library.vcu.edu/access/accessibility/">Accessibility</a></li>
 			<li><a href="//text.vcu.edu/tt/referrer">Text Only</a></li>
-			<li><a href="#">Site Map</a></li>
+			<li><a href="//jamesbranchcabell.library.vcu.edu/sitemap_index.xml">Site Map</a></li>
 			<li class="donate"><a href="//www.library.vcu.edu/about/giving/"><span class="fas fa-donate"></span> Give Now</a></li>
 		</ul>
 		<?php
