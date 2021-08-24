@@ -18,6 +18,14 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src=“https://www.googletagmanager.com/gtag/js?id=G-Q1PHJCC4S3”></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag(‘js’, new Date());
+		gtag(‘config’, ‘G-Q1PHJCC4S3’);
+	</script>
 	<script type="text/javascript" defer src="//branding.vcu.edu/bar/academic/latest.js" data-color-top-campaign="white"></script>
 	<?php wp_head(); ?>
 	<script type="text/javascript" src="//branding.vcu.edu/bar/academic/latest.js" data-color-top-campaign="graydark"></script>
