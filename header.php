@@ -24,7 +24,7 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-		gtag('config’, 'G-Q1PHJCC4S3');
+		gtag('config', 'G-Q1PHJCC4S3');
 	</script>
 	<script type="text/javascript" defer src="//branding.vcu.edu/bar/academic/latest.js" data-color-top-campaign="white"></script>
 	<?php wp_head(); ?>
