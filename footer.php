@@ -15,16 +15,15 @@
 <footer id="colophon" class="site-footer">
 	<?php $contact_url = get_permalink( get_page_by_path( 'contact' ) ); ?>
 	<div class="info-footer">
-		<div class="footer-info">
-			<a href="https://library.vcu.edu"><img src="https://apps.library.vcu.edu/assets/public/images/bm_Libraries_RF_hz_4c_rev" alt="VCU Libraries logo"></a>
-			<ul>
-				<li>901 Park Ave., Box 842033</li>
-				<li>Richmond, VA 23284-2033</li>
-				<li>Toll-free: (844) 352-7399</li>
-				<li>Local: (804) 828-1111</li>
-				<li><a alt="Contact Us" href="<?php echo esc_html($contact_url)?>">Contact Us</a></li>
-			</ul>
-		</div>
+		<a class="footer-logo" href="https://library.vcu.edu"><img src="https://apps.library.vcu.edu/assets/public/images/bm_Libraries_RF_hz_4c_rev" alt="VCU Libraries logo"></a>
+		<ul>
+			<li>901 Park Ave., Box 842033</li>
+			<li>Richmond, VA 23284-2033</li>
+			<li>Toll-free: (844) 352-7399</li>
+			<li>Local: (804) 828-1111</li>
+			<li><a alt="Contact Us" href="<?php echo esc_html($contact_url)?>">Contact Us</a></li>
+		</ul>
+	<!--
 		<nav id="footer-nav" class="footer-navigation">
 			<?php
 			wp_nav_menu(
@@ -34,7 +33,9 @@
 				)
 			);
 			?>
-		</nav><!-- #site-navigation -->
+		</nav>
+		-->
+		<!-- #site-navigation -->
 		<ul class="footer-links">
 			<li><a href="//www.vcu.edu/">Virginia Commonwealth University</a></li>
 			<li><a href="//www.library.vcu.edu/about/guidelines/copyright-privacy/">Copyright &amp; Privacy</a></li>
