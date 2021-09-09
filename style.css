@@ -7133,6 +7133,21 @@ textarea {
 	margin-bottom: 1.5rem;
 }
 
+.type-page h3,
+.type-post h3 {
+	max-width: 74.6ch;
+}
+
+.type-page h4,
+.type-post h4 {
+	max-width: 87.3ch;
+}
+
+.type-page h5,
+.type-post h5 {
+	max-width: 105ch;
+}
+
 .type-page p,
 .type-post p {
 	font-size: 1.5rem;
