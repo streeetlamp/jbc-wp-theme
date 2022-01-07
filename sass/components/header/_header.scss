@@ -116,10 +116,29 @@
                 grid-row: 2 / span 1;
                 background-color: $color__darkest;
                 height: 100%;
+                width: 70%;
                 right: 0;
-                top: 40px;
-                padding: 20px 40px;
+                top: 63px;
                 z-index: 99;
+
+                a {
+                    width: 100%;
+                }
+
+                #primary-menu {
+                    li {
+                      padding: 1.25rem;
+                    }
+                  
+                }
+
+                .sub-menu {
+                    padding-top: 0;
+
+                    a {
+                        padding: 0;
+                    }
+                }
             }
         }
     }
