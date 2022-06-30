@@ -8,7 +8,6 @@ FEATURE PUNCH DOWN LIST
 ✔ Customizable front page (SWHP example) which may include embedded audio, video, images, feeds from other platforms or quatations @done(21-02-03 16:49)
 ✔ Pull quotes on posts ( excerpt? ) @done(21-04-30 15:46)
 ✔ Ability to add text over and below hero text (see mockup) @done(21-01-28 12:05)
-☐ Possible tag cloud of sorts?
 ✔ Newsletter subscriptions @done(21-02-12 16:53)
 ✔ Featured Images (ex: SWHP) @done(21-02-03 16:49)
 ☐ Excerpts for browsing type pages
@@ -29,7 +28,6 @@ FEATURE PUNCH DOWN LIST
 ✔ add link to home getting started block @done(21-04-09 16:20)
 ✔ feedback banner / form @done(21-04-13 12:46)
 ✔ Share to staff on 4/14 @done(21-04-19 15:33)
-☐ Lightbox??
 ☐ cleanup php/js (phpcs, phpcbf, theme inspector)
 ✔ fix up not found page layout @done(21-04-13 15:21)
 ✔ prevent media upload breaking @done(21-04-13 15:21)
