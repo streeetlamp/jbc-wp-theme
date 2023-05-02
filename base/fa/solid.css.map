@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "solid.css",
+	"sources": [
+		"../../sass/base/fa/solid.scss",
+		"../../sass/base/fa/_variables.scss"
+	],
+	"names": [],
+	"mappings": "AAAA;;;GAGG;AAGH,UAAU;CACR,WAAW,EAAE,qBAAqB;CAClC,UAAU,EAAE,MAAM;CAClB,WAAW,EAAE,GAAG;CAChB,YAAY,ECLS,KAAK;CDM1B,GAAG,EAAE,gCAAwC;CAC7C,GAAG,EAAE,uCAA+C,CAAC,2BAA2B,EAChF,kCAA0C,CAAC,eAAe,EAC1D,iCAAyC,CAAC,cAAc,EACxD,gCAAwC,CAAC,kBAAkB,EAC3D,4CAAoD,CAAC,aAAa;;;AAGpE,AAAA,GAAG;AACH,IAAI,CAAC;CACH,WAAW,EAAE,qBAAqB;CAClC,WAAW,EAAE,GAAG;CACjB"
+}
