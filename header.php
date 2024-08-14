@@ -28,7 +28,6 @@
 	</script>
 	<script type="text/javascript" defer src="//branding.vcu.edu/bar/academic/latest.js" data-color-top-campaign="white"></script>
 	<?php wp_head(); ?>
-	<script type="text/javascript" src="//branding.vcu.edu/bar/academic/latest.js" data-color-top-campaign="graydark"></script>
 </head>
 
 <body <?php body_class(); ?>>
